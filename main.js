@@ -963,7 +963,7 @@ module.exports = "<div class=\"chart\">\r\n  <canvas baseChart\r\n          [dat
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".chart {\n  display: block; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvRGVtb1BhZ2VzL0NoYXJ0cy9jaGFydGpzL2V4YW1wbGVzL3BpZS1jaGFydC9EOlxcYXJpX2xhdGVzdFxccG9jXFxjb3ZpZC0xOS9zcmNcXGFwcFxcRGVtb1BhZ2VzXFxDaGFydHNcXGNoYXJ0anNcXGV4YW1wbGVzXFxwaWUtY2hhcnRcXHBpZS1jaGFydC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGNBQWMsRUFBQSIsImZpbGUiOiJzcmMvYXBwL0RlbW9QYWdlcy9DaGFydHMvY2hhcnRqcy9leGFtcGxlcy9waWUtY2hhcnQvcGllLWNoYXJ0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNoYXJ0IHtcclxuICBkaXNwbGF5OiBibG9jaztcclxufVxyXG4iXX0= */"
+module.exports = ".chart {\n  display: block; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvRGVtb1BhZ2VzL0NoYXJ0cy9jaGFydGpzL2V4YW1wbGVzL3BpZS1jaGFydC9EOlxcYXJpX2xhdGVzdFxcZGV2XFxwb2NcXGNvdmlkLTE5L3NyY1xcYXBwXFxEZW1vUGFnZXNcXENoYXJ0c1xcY2hhcnRqc1xcZXhhbXBsZXNcXHBpZS1jaGFydFxccGllLWNoYXJ0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsY0FBYyxFQUFBIiwiZmlsZSI6InNyYy9hcHAvRGVtb1BhZ2VzL0NoYXJ0cy9jaGFydGpzL2V4YW1wbGVzL3BpZS1jaGFydC9waWUtY2hhcnQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY2hhcnQge1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG59XHJcbiJdfQ== */"
 
 /***/ }),
 
@@ -1760,7 +1760,7 @@ var TooltipsPopoversComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <app-page-title [heading]=\"heading\" [subheading]=\"subheading\" [icon]=\"icon\"></app-page-title> -->\r\n\r\n<div class=\"mb-3 card\">\r\n  <div class=\"card-header-tab card-header\">\r\n    <div class=\"card-header-title font-size-lg text-capitalize font-weight-normal\">\r\n      <i class=\"header-icon lnr-charts icon-gradient bg-happy-green\"> </i>\r\n      Select Country\r\n    </div>\r\n  </div>\r\n  <div class=\"no-gutters row\">\r\n    <div class=\"col-sm-10 col-md-10 col-xl-10 p-3\">\r\n      <!-- <ul>\r\n        <li *ngFor=\"let item of countries;let i = index\">\r\n          {{item.name}}\r\n          {{i}}\r\n        </li>\r\n      </ul> -->\r\n    \r\n    \r\n      <!-- <ul>\r\n        <li *ngFor=\"let item of confirmedData;let i = index\">\r\n          {{item.other_detail.Country}}\r\n        </li>\r\n      </ul> -->\r\n    \r\n    \r\n    \r\n        <ng-select class=\"mb-2 form-control\" [items]=\"countries\"\r\n          bindLabel=\"name\"\r\n          [(ngModel)]=\"country\"\r\n          [clearable]=\"false\"\r\n          dropdownPosition=\"botom\"\r\n          (change)=\"countryChange($event)\"\r\n          [searchable]=\"true\"\r\n        >\r\n        \r\n          <!-- <ng-template ng-header-tmp>\r\n            <div class=\"temp_class d-flex\">\r\n              <img class=\"search-icon-image\" src=\"{{ASSETS_PATH}}/images/icons/search_icon.png\" alt=\"search\"/>\r\n              <input class=\"input-Class-header\" type=\"text\" placeholder=\"Search Corporation\" (input)=\"countrySelect.filter($event.target.value)\"/>\r\n            </div>\r\n          </ng-template> -->\r\n        </ng-select>\r\n      <div class=\"divider m-0 d-md-none d-sm-block\"></div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"mb-3 card\">\r\n    <div class=\"card-header-tab card-header\">\r\n      <div class=\"card-header-title font-size-lg text-capitalize font-weight-normal\">\r\n        <i class=\"header-icon lnr-charts icon-gradient bg-happy-green\"> </i>\r\n        In {{country.name}}\r\n        {{country.index}}\r\n      </div>\r\n    </div>\r\n    <div class=\"no-gutters row\">\r\n      <div class=\"col-sm-6 col-md-4 col-xl-4\">\r\n        <div class=\"card no-shadow rm-border bg-transparent widget-chart text-left\">\r\n          <div class=\"icon-wrapper rounded-circle\">\r\n            <div class=\"icon-wrapper-bg opacity-10 bg-warning\"></div>\r\n          </div>\r\n          <div class=\"widget-chart-content\">\r\n            <div class=\"widget-subheading\">Active cases</div>\r\n            <div class=\"widget-numbers\">{{totalConfirmedCases}}</div>\r\n            <div class=\"widget-description opacity-8 text-focus\">\r\n              <div class=\"d-inline text-danger pr-1\">\r\n                <fa name=\"angle-down\"></fa>\r\n                <span class=\"pl-1\">\r\n                  {{(totalConfirmedCases / totalPopulation) * 100 | number : '1.2-2'}}%\r\n                </span>\r\n              </div>\r\n              \r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"divider m-0 d-md-none d-sm-block\"></div>\r\n      </div>\r\n      <div class=\"col-sm-6 col-md-4 col-xl-4\">\r\n        <div class=\"card no-shadow rm-border bg-transparent widget-chart text-left\">\r\n          <div class=\"icon-wrapper rounded-circle bg-success\">\r\n            <div class=\"icon-wrapper-bg opacity-9\"></div>\r\n          </div>\r\n          <div class=\"widget-chart-content\">\r\n            <div class=\"widget-subheading\">Recovered cases</div>\r\n            <div class=\"widget-numbers\"><span>{{totalRecoveredCases}}</span></div>\r\n            <div class=\"widget-description opacity-8 text-focus\">\r\n              Decreased Rate:\r\n              <span class=\"text-info pl-1\">\r\n                  <fa name=\"angle-down\"></fa>\r\n                  <span class=\"pl-1\">\r\n                      {{(totalRecoveredCases / totalConfirmedCases) * 100 | number : '1.2-2'}}%\r\n                  </span>\r\n              </span>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"divider m-0 d-md-none d-sm-block\"></div>\r\n      </div>\r\n      <div class=\"col-sm-12 col-md-4 col-xl-4\">\r\n        <div class=\"card no-shadow rm-border bg-transparent widget-chart text-left\">\r\n          <div class=\"icon-wrapper rounded-circle\">\r\n            <div class=\"icon-wrapper-bg opacity-9 bg-danger\"></div>\r\n          </div>\r\n          <div class=\"widget-chart-content\">\r\n            <div class=\"widget-subheading\">Fatal cases</div>\r\n            <div class=\"widget-numbers text-red\"><span>{{totalDeathCases}}</span></div>\r\n            <div class=\"widget-description text-errors\">\r\n              Decreased Rate\r\n              <span class=\"text-warning pl-1\">\r\n                  <fa name=\"angle-up\"></fa>\r\n                  <span class=\"pl-1\">\r\n                      {{(totalDeathCases / totalConfirmedCases) * 100 | number : '1.2-2'}}%\r\n                  </span>\r\n              </span>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!-- <div class=\"text-center d-block p-3 card-footer\">\r\n      <button class=\"btn-pill btn-shadow btn-wide fsize-1 btn btn-primary btn-lg\">\r\n                    <span class=\"mr-2 opacity-7\">\r\n                        <i class=\"icon icon-anim-pulse ion-ios-analytics-outline\"></i>\r\n                    </span>\r\n        <span class=\"mr-1\">View Complete Report</span>\r\n      </button>\r\n    </div> -->\r\n  </div>\r\n\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-6\">\r\n      <div class=\"card main-card mb-3\">\r\n        <div class=\"card-header\">\r\n          Confirmed Vs Death Cases\r\n        </div>\r\n        <div class=\"card-body\">\r\n          <app-confirmed-actual-vs-death-actual></app-confirmed-actual-vs-death-actual>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-sm-12 col-lg-6\">\r\n      <div class=\"card main-card mb-3\">\r\n        <div class=\"card-header\">\r\n            Confirmed Actual Vs Confirmed Prediction\r\n        </div>\r\n        <div class=\"card-body\">\r\n          <!-- <h5 *ngIf=\"selectedCountry.index !== 96 || \r\n          selectedCountry.index !== 103 || \r\n          selectedCountry.index !== 196 || \r\n          selectedCountry.index !== 224\">\r\n          Not Available\r\n        </h5>\r\n        *ngIf=\"selectedCountry.index === 96 || \r\n          selectedCountry.index === 103 || \r\n          selectedCountry.index === 196 || \r\n          selectedCountry.index === 224\" -->\r\n          {{selectedCountry.index}}\r\n          <app-confirmed-actual-vs-confirmed-predictions></app-confirmed-actual-vs-confirmed-predictions>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-6\">\r\n      <div class=\"card main-card mb-3\">\r\n        <div class=\"card-header\">\r\n            Top 3 countries confirmed cases\r\n        </div>\r\n        <div class=\"card-body\">\r\n          <app-top-three-countries-confirmed-cases></app-top-three-countries-confirmed-cases>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-sm-12 col-lg-6\">\r\n      <div class=\"card main-card mb-3\">\r\n        <div class=\"card-header\">\r\n            Recovery actual vs Recovoery Prediction Cases\r\n        </div>\r\n        <div class=\"card-body margin-auto\">\r\n          <img src=\"../../../../assets/images/icons/in-progress.png\"/>\r\n          <!-- <app-death-actual-vs-death-prediction></app-death-actual-vs-death-prediction> -->\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  \r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-12\">\r\n      <div class=\"card main-card mb-3\">\r\n        <div class=\"card-header\">\r\n          Death Actual vs Death Prediction Cases \r\n        </div>\r\n        <div class=\"card-body margin-auto\">\r\n          <img src=\"../../../../assets/images/icons/in-progress.png\"/>\r\n          <!-- <app-recovery-actual-vs-recovery-prediction></app-recovery-actual-vs-recovery-prediction> -->\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  \r\n\r\n  <!-- <div class=\"main-card mb-3 card\">\r\n  <div class=\"card-header\">\r\n    <div class=\"card-header-title font-size-lg text-capitalize font-weight-normal\">Company Agents Status</div>\r\n  </div>\r\n  <div class=\"table-responsive\">\r\n    <table class=\"align-middle text-truncate mb-0 table table-borderless table-hover\">\r\n      <thead>\r\n      <tr>\r\n        <th class=\"text-center\">#</th>\r\n        <th class=\"text-center\">Avatar</th>\r\n        <th class=\"text-center\">Name</th>\r\n        <th class=\"text-center\">Company</th>\r\n        <th class=\"text-center\">Status</th>\r\n        <th class=\"text-center\">Due Date</th>\r\n        <th class=\"text-center\">Target Achievement</th>\r\n        <th class=\"text-center\">Actions</th>\r\n      </tr>\r\n      </thead>\r\n      <tbody>\r\n      <tr>\r\n        <td class=\"text-center text-muted\" style=\"width: 80px;\">#54</td>\r\n        <td class=\"text-center\" style=\"width: 80px;\">\r\n          <img width=\"40\" class=\"rounded-circle\" src=\"./assets/images/avatars/1.jpg\" alt=\"\">\r\n        </td>\r\n        <td class=\"text-center\"><a [routerLink]=\"\">Juan C. Cargill</a></td>\r\n        <td class=\"text-center\"><a [routerLink]=\"\">Micro Electronics</a></td>\r\n        <td class=\"text-center\">\r\n          <div class=\"badge badge-pill badge-danger\">Canceled</div>\r\n        </td>\r\n        <td class=\"text-center\">\r\n                                        <span class=\"pr-2 opacity-6\">\r\n                                            <i class=\"fa fa-business-time\"></i>\r\n                                        </span>\r\n          12 Dec\r\n        </td>\r\n        <td class=\"text-center\" style=\"width: 200px;\">\r\n          <div class=\"widget-content p-0\">\r\n            <div class=\"widget-content-outer\">\r\n              <div class=\"widget-content-wrapper\">\r\n                <div class=\"widget-content-left pr-2\">\r\n                  <div class=\"widget-numbers fsize-1 text-danger\">71%</div>\r\n                </div>\r\n                <div class=\"widget-content-right w-100\">\r\n                  <div class=\"progress-bar-xs progress\">\r\n                    <div class=\"progress-bar bg-danger\" role=\"progressbar\" aria-valuenow=\"71\" aria-valuemin=\"0\"\r\n                         aria-valuemax=\"100\" style=\"width: 71%;\"></div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </td>\r\n        <td class=\"text-center\">\r\n          <div role=\"group\" class=\"btn-group-sm btn-group\">\r\n            <button class=\"btn-shadow btn btn-primary\">Hire</button>\r\n            <button class=\"btn-shadow btn btn-primary\">Fire</button>\r\n          </div>\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"text-center text-muted\" style=\"width: 80px;\">#55</td>\r\n        <td class=\"text-center\" style=\"width: 80px;\">\r\n          <img width=\"40\" class=\"rounded-circle\" src=\"./assets/images/avatars/2.jpg\" alt=\"\">\r\n        </td>\r\n        <td class=\"text-center\"><a [routerLink]=\"\">Johnathan Phelan</a></td>\r\n        <td class=\"text-center\"><a [routerLink]=\"\">Hatchworks</a></td>\r\n        <td class=\"text-center\">\r\n          <div class=\"badge badge-pill badge-info\">On Hold</div>\r\n        </td>\r\n        <td class=\"text-center\">\r\n                                        <span class=\"pr-2 opacity-6\">\r\n                                            <i class=\"fa fa-business-time\"></i>\r\n                                        </span>\r\n          12 Dec\r\n        </td>\r\n        <td class=\"text-center\" style=\"width: 200px;\">\r\n          <div class=\"widget-content p-0\">\r\n            <div class=\"widget-content-outer\">\r\n              <div class=\"widget-content-wrapper\">\r\n                <div class=\"widget-content-left pr-2\">\r\n                  <div class=\"widget-numbers fsize-1 text-warning\">54%</div>\r\n                </div>\r\n                <div class=\"widget-content-right w-100\">\r\n                  <div class=\"progress-bar-xs progress\">\r\n                    <div class=\"progress-bar bg-warning\" role=\"progressbar\" aria-valuenow=\"54\" aria-valuemin=\"0\"\r\n                         aria-valuemax=\"100\" style=\"width: 54%;\"></div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </td>\r\n        <td class=\"text-center\">\r\n          <div role=\"group\" class=\"btn-group-sm btn-group\">\r\n            <button class=\"btn-shadow btn btn-primary\">Hire</button>\r\n            <button class=\"btn-shadow btn btn-primary\">Fire</button>\r\n          </div>\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"text-center text-muted\" style=\"width: 80px;\">#56</td>\r\n        <td class=\"text-center\" style=\"width: 80px;\">\r\n          <img width=\"40\" class=\"rounded-circle\" src=\"./assets/images/avatars/3.jpg\" alt=\"\">\r\n        </td>\r\n        <td class=\"text-center\"><a [routerLink]=\"\">Darrell Lowe</a></td>\r\n        <td class=\"text-center\"><a [routerLink]=\"\">Riddle Electronics</a></td>\r\n        <td class=\"text-center\">\r\n          <div class=\"badge badge-pill badge-warning\">In Progress</div>\r\n        </td>\r\n        <td class=\"text-center\">\r\n                                        <span class=\"pr-2 opacity-6\">\r\n                                            <i class=\"fa fa-business-time\"></i>\r\n                                        </span>\r\n          12 Dec\r\n        </td>\r\n        <td class=\"text-center\" style=\"width: 200px;\">\r\n          <div class=\"widget-content p-0\">\r\n            <div class=\"widget-content-outer\">\r\n              <div class=\"widget-content-wrapper\">\r\n                <div class=\"widget-content-left pr-2\">\r\n                  <div class=\"widget-numbers fsize-1 text-success\">97%</div>\r\n                </div>\r\n                <div class=\"widget-content-right w-100\">\r\n                  <div class=\"progress-bar-xs progress\">\r\n                    <div class=\"progress-bar bg-success\" role=\"progressbar\" aria-valuenow=\"97\" aria-valuemin=\"0\"\r\n                         aria-valuemax=\"100\" style=\"width: 97%;\"></div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </td>\r\n        <td class=\"text-center\">\r\n          <div role=\"group\" class=\"btn-group-sm btn-group\">\r\n            <button class=\"btn-shadow btn btn-primary\">Hire</button>\r\n            <button class=\"btn-shadow btn btn-primary\">Fire</button>\r\n          </div>\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"text-center text-muted\" style=\"width: 80px;\">#56</td>\r\n        <td class=\"text-center\" style=\"width: 80px;\">\r\n          <img width=\"40\" class=\"rounded-circle\" src=\"./assets/images/avatars/4.jpg\" alt=\"\">\r\n        </td>\r\n        <td class=\"text-center\"><a [routerLink]=\"\">George T. Cottrell</a></td>\r\n        <td class=\"text-center\"><a [routerLink]=\"\">Pixelcloud</a></td>\r\n        <td class=\"text-center\">\r\n          <div class=\"badge badge-pill badge-success\">Completed</div>\r\n        </td>\r\n        <td class=\"text-center\">\r\n                                        <span class=\"pr-2 opacity-6\">\r\n                                            <i class=\"fa fa-business-time\"></i>\r\n                                        </span>\r\n          12 Dec\r\n        </td>\r\n        <td class=\"text-center\" style=\"width: 200px;\">\r\n          <div class=\"widget-content p-0\">\r\n            <div class=\"widget-content-outer\">\r\n              <div class=\"widget-content-wrapper\">\r\n                <div class=\"widget-content-left pr-2\">\r\n                  <div class=\"widget-numbers fsize-1 text-info\">88%</div>\r\n                </div>\r\n                <div class=\"widget-content-right w-100\">\r\n                  <div class=\"progress-bar-xs progress\">\r\n                    <div class=\"progress-bar bg-info\" role=\"progressbar\" aria-valuenow=\"88\" aria-valuemin=\"0\"\r\n                         aria-valuemax=\"100\" style=\"width: 88%;\"></div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </td>\r\n        <td class=\"text-center\">\r\n          <div role=\"group\" class=\"btn-group-sm btn-group\">\r\n            <button class=\"btn-shadow btn btn-primary\">Hire</button>\r\n            <button class=\"btn-shadow btn btn-primary\">Fire</button>\r\n          </div>\r\n        </td>\r\n      </tr>\r\n      </tbody>\r\n    </table>\r\n  </div>\r\n  <div class=\"d-block p-4 text-center card-footer\">\r\n    <button class=\"btn-pill btn-shadow btn-wide fsize-1 btn btn-dark btn-lg\">\r\n      <span class=\"mr-2 opacity-7\">\r\n          <i class=\"fa fa-cog fa-spin\"></i>\r\n      </span>\r\n      <span class=\"mr-1\">View Complete Report</span>\r\n    </button>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n<div class=\"row\">\r\n  <div class=\"col-sm-12 col-lg-6\">\r\n    <div class=\"mb-3 card\">\r\n      <div class=\"card-header-tab card-header\">\r\n        <div class=\"card-header-title font-size-lg text-capitalize font-weight-normal\">\r\n          <i class=\"header-icon lnr-cloud-download icon-gradient bg-happy-itmeo\"> </i>\r\n          Technical Support\r\n        </div>\r\n      </div>\r\n      <div class=\"p-0 card-body\">\r\n        <div class=\"p-1 slick-slider-sm mx-auto\">\r\n          <div class=\"widget-chart widget-chart2 text-left p-0\">\r\n            <div class=\"widget-chat-wrapper-outer\">\r\n              <div class=\"widget-chart-content widget-chart-content-lg pb-0\">\r\n                <div class=\"widget-chart-flex\">\r\n                  <div class=\"widget-title opacity-5 text-muted text-uppercase\">Helpdesk Tickets</div>\r\n                </div>\r\n                <div class=\"widget-numbers\">\r\n                  <div class=\"widget-chart-flex\">\r\n                    <div>\r\n                      <span class=\"text-warning\">34</span>\r\n                    </div>\r\n                    <div class=\"widget-title ml-2 font-size-lg font-weight-normal text-dark\">\r\n                      <span class=\"opacity-5 text-muted pl-2 pr-1\">5%</span>\r\n                      increase\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n\r\n        <h6 class=\"text-muted text-uppercase font-size-md opacity-5 pl-3 pr-3 pb-1 font-weight-normal\">Sales\r\n          Progress</h6>\r\n        <ul class=\"list-group list-group-flush\">\r\n          <li class=\"p-3 bg-transparent list-group-item\">\r\n            <div class=\"widget-content p-0\">\r\n              <div class=\"widget-content-outer\">\r\n                <div class=\"widget-content-wrapper\">\r\n                  <div class=\"widget-content-left\">\r\n                    <div class=\"widget-heading\">Total Orders</div>\r\n                    <div class=\"widget-subheading\">Last year expenses</div>\r\n                  </div>\r\n                  <div class=\"widget-content-right\">\r\n                    <div class=\"widget-numbers text-success\">\r\n                      <small>$</small>\r\n                      1896\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"widget-progress-wrapper\">\r\n                  <div class=\"progress-bar-sm progress-bar-animated-alt progress\">\r\n                    <div class=\"progress-bar bg-primary\" role=\"progressbar\" aria-valuenow=\"43\" aria-valuemin=\"0\"\r\n                         aria-valuemax=\"100\" style=\"width: 43%;\"></div>\r\n                  </div>\r\n                  <div class=\"progress-sub-label\">\r\n                    <div class=\"sub-label-left\">YoY Growth</div>\r\n                    <div class=\"sub-label-right\">100%</div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"col-sm-12 col-lg-6\">\r\n    <div class=\"card-hover-shadow-2x mb-3 card\">\r\n      <div class=\"card-header-tab card-header\">\r\n        <div class=\"card-header-title font-size-lg text-capitalize font-weight-normal\">\r\n          <i class=\"header-icon lnr-lighter icon-gradient bg-amy-crisp\"> </i>\r\n          Timeline Example\r\n        </div>\r\n      </div>\r\n      <div class=\"scroll-area-lg\">\r\n        <perfect-scrollbar [autoPropagation]=\"true\">\r\n          <div class=\"p-4\">\r\n            <div\r\n              class=\"vertical-time-simple vertical-without-time vertical-timeline vertical-timeline--animate vertical-timeline--one-column\">\r\n              <div class=\"dot-danger vertical-timeline-element\">\r\n                <div>\r\n                  <span class=\"vertical-timeline-element-icon bounce-in\"></span>\r\n                  <div class=\"vertical-timeline-element-content bounce-in\">\r\n                    <h4 class=\"timeline-title\">All Hands Meeting</h4>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"dot-warning vertical-timeline-element\">\r\n                <div>\r\n                  <span class=\"vertical-timeline-element-icon bounce-in\"></span>\r\n                  <div class=\"vertical-timeline-element-content bounce-in\">\r\n                    <p>Yet another one, at <span class=\"text-success\">15:00 PM</span></p>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"dot-success vertical-timeline-element\">\r\n                <div>\r\n                  <span class=\"vertical-timeline-element-icon bounce-in\"></span>\r\n                  <div class=\"vertical-timeline-element-content bounce-in\">\r\n                    <h4 class=\"timeline-title\">Build the production release\r\n                      <div class=\"badge badge-danger ml-2\">NEW</div>\r\n                    </h4>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"dot-primary vertical-timeline-element\">\r\n                <div>\r\n                  <span class=\"vertical-timeline-element-icon bounce-in\"></span>\r\n                  <div class=\"vertical-timeline-element-content bounce-in\">\r\n                    <h4 class=\"timeline-title\">\r\n                      Something not important\r\n                    </h4>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"dot-warning vertical-timeline-element\">\r\n                <div>\r\n                  <span class=\"vertical-timeline-element-icon bounce-in\"></span>\r\n                  <div class=\"vertical-timeline-element-content bounce-in\">\r\n                    <p>Yet another one, at <span class=\"text-success\">15:00 PM</span></p>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"dot-success vertical-timeline-element\">\r\n                <div>\r\n                  <span class=\"vertical-timeline-element-icon bounce-in\"></span>\r\n                  <div class=\"vertical-timeline-element-content bounce-in\">\r\n                    <h4 class=\"timeline-title\">Build the production release\r\n                      <div class=\"badge badge-danger ml-2\">NEW</div>\r\n                    </h4>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"dot-info vertical-timeline-element\">\r\n                <div>\r\n                  <span class=\"vertical-timeline-element-icon bounce-in\"></span>\r\n                  <div class=\"vertical-timeline-element-content bounce-in\">\r\n                    <h4 class=\"timeline-title\">This dot has an info state</h4>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"dot-dark vertical-timeline-element\">\r\n                <div>\r\n                  <span class=\"vertical-timeline-element-icon bounce-in\"></span>\r\n                  <div class=\"vertical-timeline-element-content bounce-in\">\r\n                    <h4 class=\"timeline-title\">This dot has a dark state</h4>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"dot-danger vertical-timeline-element\">\r\n                <div>\r\n                  <span class=\"vertical-timeline-element-icon bounce-in\"></span>\r\n                  <div class=\"vertical-timeline-element-content bounce-in\">\r\n                    <h4 class=\"timeline-title\">All Hands Meeting</h4>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"dot-warning vertical-timeline-element\">\r\n                <div>\r\n                  <span class=\"vertical-timeline-element-icon bounce-in\"></span>\r\n                  <div class=\"vertical-timeline-element-content bounce-in\">\r\n                    <p>Yet another one, at <span class=\"text-success\">15:00 PM</span></p>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"dot-success vertical-timeline-element\">\r\n                <div>\r\n                  <span class=\"vertical-timeline-element-icon bounce-in\"></span>\r\n                  <div class=\"vertical-timeline-element-content bounce-in\">\r\n                    <h4 class=\"timeline-title\">Build the production release\r\n                      <div class=\"badge badge-danger ml-2\">NEW</div>\r\n                    </h4>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"dot-primary vertical-timeline-element\">\r\n                <div>\r\n                  <span class=\"vertical-timeline-element-icon bounce-in\"></span>\r\n                  <div class=\"vertical-timeline-element-content bounce-in\">\r\n                    <h4 class=\"timeline-title\">\r\n                      Something not important\r\n                    </h4>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </perfect-scrollbar>\r\n      </div>\r\n      <div class=\"d-block text-center card-footer\">\r\n        <button class=\"btn-shadow btn-wide btn-pill btn btn-focus\">\r\n          View All Messages\r\n        </button>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"row\">\r\n  <div class=\"col-sm-12 col-lg-6\">\r\n    <div class=\"card-hover-shadow-2x mb-3 card\">\r\n      <div class=\"card-header-tab card-header\">\r\n        <div class=\"card-header-title font-size-lg text-capitalize font-weight-normal\"><i\r\n          class=\"header-icon lnr-database icon-gradient bg-malibu-beach\"> </i>Tasks List\r\n        </div>\r\n        <div class=\"btn-actions-pane-right text-capitalize actions-icon-btn\" ngbDropdown>\r\n          <button class=\"btn btn-icon btn-icon-only btn-link\" ngbDropdownToggle>\r\n            <fa name=\"th\"></fa>\r\n          </button>\r\n          <div ngbDropdownMenu>\r\n            <button type=\"button\" tabindex=\"0\" class=\"dropdown-item\"><i\r\n              class=\"dropdown-icon lnr-inbox\"> </i><span>Menus</span></button>\r\n            <button type=\"button\" tabindex=\"0\" class=\"dropdown-item\"><i class=\"dropdown-icon lnr-file-empty\"> </i><span>Settings</span>\r\n            </button>\r\n            <button type=\"button\" tabindex=\"0\" class=\"dropdown-item\"><i class=\"dropdown-icon lnr-book\"> </i><span>Actions</span>\r\n            </button>\r\n            <div tabindex=\"-1\" class=\"dropdown-divider\"></div>\r\n            <div class=\"p-1 text-right\">\r\n              <button class=\"mr-2 btn-shadow btn-sm btn btn-link\">View Details</button>\r\n              <button class=\"mr-2 btn-shadow btn-sm btn btn-primary\">Action</button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"scroll-area-lg\">\r\n        <perfect-scrollbar [autoPropagation]=\"true\">\r\n          <ul class=\"todo-list-wrapper list-group list-group-flush\">\r\n            <li class=\"list-group-item\">\r\n              <div class=\"todo-indicator bg-warning\"></div>\r\n              <div class=\"widget-content p-0\">\r\n                <div class=\"widget-content-wrapper\">\r\n                  <div class=\"widget-content-left mr-2\">\r\n                    <div class=\"custom-checkbox custom-control\"><input type=\"checkbox\" id=\"exampleCustomCheckbox12\"\r\n                                                                       class=\"custom-control-input\"><label\r\n                      class=\"custom-control-label\"\r\n                      for=\"exampleCustomCheckbox12\">&nbsp;</label>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"widget-content-left\">\r\n                    <div class=\"widget-heading\">Wash the car\r\n                      <div class=\"badge badge-danger ml-2\">Rejected</div>\r\n                    </div>\r\n                    <div class=\"widget-subheading\"><i>Written by Bob</i></div>\r\n                  </div>\r\n                  <div class=\"widget-content-right widget-content-actions\">\r\n                    <button class=\"border-0 btn-transition btn btn-outline-success\">\r\n                      <fa name=\"check\"></fa>\r\n                    </button>\r\n                    <button class=\"border-0 btn-transition btn btn-outline-danger\">\r\n                      <fa name=\"trash\"></fa>\r\n                    </button>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </li>\r\n            <li class=\"list-group-item\">\r\n              <div class=\"todo-indicator bg-focus\"></div>\r\n              <div class=\"widget-content p-0\">\r\n                <div class=\"widget-content-wrapper\">\r\n                  <div class=\"widget-content-left mr-2\">\r\n                    <div class=\"custom-checkbox custom-control\"><input type=\"checkbox\" id=\"exampleCustomCheckbox1\"\r\n                                                                       class=\"custom-control-input\"><label\r\n                      class=\"custom-control-label\"\r\n                      for=\"exampleCustomCheckbox1\">&nbsp;</label>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"widget-content-left\">\r\n                    <div class=\"widget-heading\">Task with dropdown menu</div>\r\n                    <div class=\"widget-subheading\">\r\n                      <div>By Johnny\r\n                        <div class=\"badge badge-pill badge-info ml-2\">NEW</div>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"widget-content-right widget-content-actions\">\r\n                    <div class=\"d-inline-block\" ngbDropdown placement=\"bottom-right\">\r\n                      <button class=\"btn btn-icon btn-icon-only btn-link\" ngbDropdownToggle>\r\n                        <i class=\"pe-7s-menu btn-icon-wrapper\"></i>\r\n                      </button>\r\n                      <div ngbDropdownMenu>\r\n                        <ul class=\"nav flex-column\">\r\n                          <li class=\"nav-item-header nav-item\">Activity</li>\r\n                          <li class=\"nav-item\"><a [routerLink]=\"\" class=\"nav-link\">Chat\r\n                            <div class=\"ml-auto badge badge-pill badge-info\">8</div>\r\n                          </a></li>\r\n                          <li class=\"nav-item\"><a [routerLink]=\"\" class=\"nav-link\">Recover Password</a></li>\r\n                          <li class=\"nav-item-header nav-item\">My Account</li>\r\n                          <li class=\"nav-item\"><a [routerLink]=\"\" class=\"nav-link\">Settings\r\n                            <div class=\"ml-auto badge badge-success\">New</div>\r\n                          </a></li>\r\n                          <li class=\"nav-item\"><a [routerLink]=\"\" class=\"nav-link\">Messages\r\n                            <div class=\"ml-auto badge badge-warning\">512</div>\r\n                          </a></li>\r\n                          <li class=\"nav-item\"><a [routerLink]=\"\" class=\"nav-link\">Logs</a></li>\r\n                          <li class=\"nav-item-divider nav-item\"></li>\r\n                          <li class=\"nav-item-btn nav-item\">\r\n                            <button class=\"btn-wide btn-shadow btn btn-danger btn-sm\">Cancel</button>\r\n                          </li>\r\n                        </ul>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </li>\r\n            <li class=\"list-group-item\">\r\n              <div class=\"todo-indicator bg-primary\"></div>\r\n              <div class=\"widget-content p-0\">\r\n                <div class=\"widget-content-wrapper\">\r\n                  <div class=\"widget-content-left mr-2\">\r\n                    <div class=\"custom-checkbox custom-control\"><input type=\"checkbox\" id=\"exampleCustomCheckbox4\"\r\n                                                                       class=\"custom-control-input\"><label\r\n                      class=\"custom-control-label\"\r\n                      for=\"exampleCustomCheckbox4\">&nbsp;</label>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"widget-content-left flex2\">\r\n                    <div class=\"widget-heading\">Badge on the right task</div>\r\n                    <div class=\"widget-subheading\">This task has show on hover actions!</div>\r\n                  </div>\r\n                  <div class=\"widget-content-right widget-content-actions\">\r\n                    <button class=\"border-0 btn-transition btn btn-outline-success\">\r\n                      <fa name=\"check\"></fa>\r\n                    </button>\r\n                  </div>\r\n                  <div class=\"widget-content-right ml-3\">\r\n                    <div class=\"badge badge-pill badge-success\">Latest Task</div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </li>\r\n            <li class=\"list-group-item\">\r\n              <div class=\"todo-indicator bg-info\"></div>\r\n              <div class=\"widget-content p-0\">\r\n                <div class=\"widget-content-wrapper\">\r\n                  <div class=\"widget-content-left mr-2\">\r\n                    <div class=\"custom-checkbox custom-control\"><input type=\"checkbox\" id=\"exampleCustomCheckbox2\"\r\n                                                                       class=\"custom-control-input\"><label\r\n                      class=\"custom-control-label\"\r\n                      for=\"exampleCustomCheckbox2\">&nbsp;</label>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"widget-content-left mr-3\">\r\n                    <div class=\"widget-content-left\">\r\n                      <img width=\"42\" class=\"rounded\" src=\"./assets/images/avatars/1.jpg\" alt=\"\">\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"widget-content-left\">\r\n                    <div class=\"widget-heading\">Go grocery shopping</div>\r\n                    <div class=\"widget-subheading\">A short description for this todo item</div>\r\n                  </div>\r\n                  <div class=\"widget-content-right widget-content-actions\">\r\n                    <button class=\"border-0 btn-transition btn btn-outline-success\">\r\n                      <fa name=\"check\"></fa>\r\n                    </button>\r\n                    <button class=\"border-0 btn-transition btn btn-outline-danger\">\r\n                      <fa name=\"trash\"></fa>\r\n                    </button>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </li>\r\n            <li class=\"list-group-item\">\r\n              <div class=\"todo-indicator bg-warning\"></div>\r\n              <div class=\"widget-content p-0\">\r\n                <div class=\"widget-content-wrapper\">\r\n                  <div class=\"widget-content-left mr-2\">\r\n                    <div class=\"custom-checkbox custom-control\"><input type=\"checkbox\" id=\"exampleCustomCheckbox12\"\r\n                                                                       class=\"custom-control-input\"><label\r\n                      class=\"custom-control-label\"\r\n                      for=\"exampleCustomCheckbox12\">&nbsp;</label>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"widget-content-left\">\r\n                    <div class=\"widget-heading\">Wash the car\r\n                      <div class=\"badge badge-danger ml-2\">Rejected</div>\r\n                    </div>\r\n                    <div class=\"widget-subheading\"><i>Written by Bob</i></div>\r\n                  </div>\r\n                  <div class=\"widget-content-right widget-content-actions\">\r\n                    <button class=\"border-0 btn-transition btn btn-outline-success\">\r\n                      <fa name=\"check\"></fa>\r\n                    </button>\r\n                    <button class=\"border-0 btn-transition btn btn-outline-danger\">\r\n                      <fa name=\"trash\"></fa>\r\n                    </button>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </li>\r\n            <li class=\"list-group-item\">\r\n              <div class=\"todo-indicator bg-focus\"></div>\r\n              <div class=\"widget-content p-0\">\r\n                <div class=\"widget-content-wrapper\">\r\n                  <div class=\"widget-content-left mr-2\">\r\n                    <div class=\"custom-checkbox custom-control\"><input type=\"checkbox\" id=\"exampleCustomCheckbox1\"\r\n                                                                       class=\"custom-control-input\"><label\r\n                      class=\"custom-control-label\"\r\n                      for=\"exampleCustomCheckbox1\">&nbsp;</label>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"widget-content-left\">\r\n                    <div class=\"widget-heading\">Task with dropdown menu</div>\r\n                    <div class=\"widget-subheading\">\r\n                      <div>By Johnny\r\n                        <div class=\"badge badge-pill badge-info ml-2\">NEW</div>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"widget-content-right widget-content-actions\">\r\n                    <div class=\"d-inline-block\" ngbDropdown placement=\"bottom-right\">\r\n                      <button class=\"btn btn-icon btn-icon-only btn-link\" ngbDropdownToggle>\r\n                        <i class=\"pe-7s-menu btn-icon-wrapper\"></i>\r\n                      </button>\r\n                      <div ngbDropdownMenu>\r\n                        <ul class=\"nav flex-column\">\r\n                          <li class=\"nav-item-header nav-item\">Activity</li>\r\n                          <li class=\"nav-item\"><a [routerLink]=\"\" class=\"nav-link\">Chat\r\n                            <div class=\"ml-auto badge badge-pill badge-info\">8</div>\r\n                          </a></li>\r\n                          <li class=\"nav-item\"><a [routerLink]=\"\" class=\"nav-link\">Recover Password</a></li>\r\n                          <li class=\"nav-item-header nav-item\">My Account</li>\r\n                          <li class=\"nav-item\"><a [routerLink]=\"\" class=\"nav-link\">Settings\r\n                            <div class=\"ml-auto badge badge-success\">New</div>\r\n                          </a></li>\r\n                          <li class=\"nav-item\"><a [routerLink]=\"\" class=\"nav-link\">Messages\r\n                            <div class=\"ml-auto badge badge-warning\">512</div>\r\n                          </a></li>\r\n                          <li class=\"nav-item\"><a [routerLink]=\"\" class=\"nav-link\">Logs</a></li>\r\n                          <li class=\"nav-item-divider nav-item\"></li>\r\n                          <li class=\"nav-item-btn nav-item\">\r\n                            <button class=\"btn-wide btn-shadow btn btn-danger btn-sm\">Cancel</button>\r\n                          </li>\r\n                        </ul>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </li>\r\n            <li class=\"list-group-item\">\r\n              <div class=\"todo-indicator bg-primary\"></div>\r\n              <div class=\"widget-content p-0\">\r\n                <div class=\"widget-content-wrapper\">\r\n                  <div class=\"widget-content-left mr-2\">\r\n                    <div class=\"custom-checkbox custom-control\"><input type=\"checkbox\" id=\"exampleCustomCheckbox4\"\r\n                                                                       class=\"custom-control-input\"><label\r\n                      class=\"custom-control-label\"\r\n                      for=\"exampleCustomCheckbox4\">&nbsp;</label>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"widget-content-left flex2\">\r\n                    <div class=\"widget-heading\">Badge on the right task</div>\r\n                    <div class=\"widget-subheading\">This task has show on hover actions!</div>\r\n                  </div>\r\n                  <div class=\"widget-content-right widget-content-actions\">\r\n                    <button class=\"border-0 btn-transition btn btn-outline-success\">\r\n                      <fa name=\"check\"></fa>\r\n                    </button>\r\n                  </div>\r\n                  <div class=\"widget-content-right ml-3\">\r\n                    <div class=\"badge badge-pill badge-success\">Latest Task</div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </li>\r\n            <li class=\"list-group-item\">\r\n              <div class=\"todo-indicator bg-success\"></div>\r\n              <div class=\"widget-content p-0\">\r\n                <div class=\"widget-content-wrapper\">\r\n                  <div class=\"widget-content-left mr-2\">\r\n                    <div class=\"custom-checkbox custom-control\"><input type=\"checkbox\" id=\"exampleCustomCheckbox3\"\r\n                                                                       class=\"custom-control-input\"><label\r\n                      class=\"custom-control-label\"\r\n                      for=\"exampleCustomCheckbox3\">&nbsp;</label>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"widget-content-left flex2\">\r\n                    <div class=\"widget-heading\">Development Task</div>\r\n                    <div class=\"widget-subheading\">Finish Vue ToDo List App</div>\r\n                  </div>\r\n                  <div class=\"widget-content-right\">\r\n                    <div class=\"badge badge-warning mr-2\">69</div>\r\n                  </div>\r\n                  <div class=\"widget-content-right\">\r\n                    <button class=\"border-0 btn-transition btn btn-outline-success\">\r\n                      <fa name=\"check\"></fa>\r\n                    </button>\r\n                    <button class=\"border-0 btn-transition btn btn-outline-danger\">\r\n                      <fa name=\"trash\"></fa>\r\n                    </button>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </li>\r\n          </ul>\r\n        </perfect-scrollbar>\r\n      </div>\r\n      <div class=\"d-block text-right card-footer\">\r\n        <button class=\"mr-2 btn btn-link btn-sm\">Cancel</button>\r\n        <button class=\"btn btn-primary\">Add Task</button>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"col-sm-12 col-lg-6\">\r\n    <div class=\"row\">\r\n      <div class=\"col-lg-6\">\r\n        <div class=\"card mb-3 widget-chart widget-chart2 text-left card-btm-border card-shadow-success border-success\">\r\n          <div class=\"widget-chat-wrapper-outer\">\r\n            <div class=\"widget-chart-content pt-3 pl-3 pb-1\">\r\n              <div class=\"widget-chart-flex\">\r\n                <div class=\"widget-numbers\">\r\n                  <div class=\"widget-chart-flex\">\r\n                    <div class=\"fsize-4\">\r\n                      <small class=\"opacity-5\">$</small>\r\n                      <span>874</span></div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <h6 class=\"widget-subheading mb-0 opacity-5\">sales last month</h6>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-lg-6\">\r\n        <div class=\"card mb-3 widget-chart widget-chart2 text-left card-btm-border card-shadow-primary border-primary\">\r\n          <div class=\"widget-chat-wrapper-outer\">\r\n            <div class=\"widget-chart-content pt-3 pl-3 pb-1\">\r\n              <div class=\"widget-chart-flex\">\r\n                <div class=\"widget-numbers\">\r\n                  <div class=\"widget-chart-flex\">\r\n                    <div class=\"fsize-4\">\r\n                      <small class=\"opacity-5\">$</small>\r\n                      <span>1283</span></div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <h6 class=\"widget-subheading mb-0 opacity-5\">Sales Income</h6>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-lg-6\">\r\n        <div class=\"card mb-3 widget-chart widget-chart2 text-left card-btm-border card-shadow-warning border-warning\">\r\n          <div class=\"widget-chat-wrapper-outer\">\r\n            <div class=\"widget-chart-content pt-3 pl-3 pb-1\">\r\n              <div class=\"widget-chart-flex\">\r\n                <div class=\"widget-numbers\">\r\n                  <div class=\"widget-chart-flex\">\r\n                    <div class=\"fsize-4\">\r\n                      <small class=\"opacity-5\">$</small>\r\n                      <span>1286</span></div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <h6 class=\"widget-subheading mb-0 opacity-5\">last month sales</h6>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-lg-6\">\r\n        <div class=\"card mb-3 widget-chart widget-chart2 text-left card-btm-border card-shadow-danger border-danger\">\r\n          <div class=\"widget-chat-wrapper-outer\">\r\n            <div class=\"widget-chart-content pt-3 pl-3 pb-1\">\r\n              <div class=\"widget-chart-flex\">\r\n                <div class=\"widget-numbers\">\r\n                  <div class=\"widget-chart-flex\">\r\n                    <div class=\"fsize-4\">\r\n                      <small class=\"opacity-5\">$</small>\r\n                      <span>564</span></div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <h6 class=\"widget-subheading mb-0 opacity-5\">total revenue</h6>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-lg-6\">\r\n        <div class=\"card mb-3 widget-chart widget-chart2 text-left card-btm-border card-shadow-info border-info\">\r\n          <div class=\"widget-chat-wrapper-outer\">\r\n            <div class=\"widget-chart-content pt-3 pl-3 pb-1\">\r\n              <div class=\"widget-chart-flex\">\r\n                <div class=\"widget-numbers\">\r\n                  <div class=\"widget-chart-flex\">\r\n                    <div class=\"fsize-4\">\r\n                      <small class=\"opacity-5\">$</small>\r\n                      <span>1283</span></div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <h6 class=\"widget-subheading mb-0 opacity-5\">Sales Income</h6>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-lg-6\">\r\n        <div class=\"card mb-3 widget-chart widget-chart2 text-left card-btm-border card-shadow-warning border-warning\">\r\n          <div class=\"widget-chat-wrapper-outer\">\r\n            <div class=\"widget-chart-content pt-3 pl-3 pb-1\">\r\n              <div class=\"widget-chart-flex\">\r\n                <div class=\"widget-numbers\">\r\n                  <div class=\"widget-chart-flex\">\r\n                    <div class=\"fsize-4\">\r\n                      <small class=\"opacity-5\">$</small>\r\n                      <span>874</span></div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <h6 class=\"widget-subheading mb-0 opacity-5\">sales last month</h6>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"card mb-3\">\r\n  <div class=\"no-gutters row\">\r\n    <div class=\"col-md-12 col-lg-4\">\r\n      <ul class=\"list-group list-group-flush\">\r\n        <li class=\"bg-transparent list-group-item\">\r\n          <div class=\"widget-content p-0\">\r\n            <div class=\"widget-content-outer\">\r\n              <div class=\"widget-content-wrapper\">\r\n                <div class=\"widget-content-left\">\r\n                  <div class=\"widget-heading\">Total Orders</div>\r\n                  <div class=\"widget-subheading\">Last year expenses</div>\r\n                </div>\r\n                <div class=\"widget-content-right\">\r\n                  <div class=\"widget-numbers text-success\">1896</div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </li>\r\n        <li class=\"bg-transparent list-group-item\">\r\n          <div class=\"widget-content p-0\">\r\n            <div class=\"widget-content-outer\">\r\n              <div class=\"widget-content-wrapper\">\r\n                <div class=\"widget-content-left\">\r\n                  <div class=\"widget-heading\">Clients</div>\r\n                  <div class=\"widget-subheading\">Total Clients Profit</div>\r\n                </div>\r\n                <div class=\"widget-content-right\">\r\n                  <div class=\"widget-numbers text-primary\">$12.6k</div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n    <div class=\"col-md-12 col-lg-4\">\r\n      <ul class=\"list-group list-group-flush\">\r\n        <li class=\"bg-transparent list-group-item\">\r\n          <div class=\"widget-content p-0\">\r\n            <div class=\"widget-content-outer\">\r\n              <div class=\"widget-content-wrapper\">\r\n                <div class=\"widget-content-left\">\r\n                  <div class=\"widget-heading\">Followers</div>\r\n                  <div class=\"widget-subheading\">People Interested</div>\r\n                </div>\r\n                <div class=\"widget-content-right\">\r\n                  <div class=\"widget-numbers text-danger\">45,9%</div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </li>\r\n        <li class=\"bg-transparent list-group-item\">\r\n          <div class=\"widget-content p-0\">\r\n            <div class=\"widget-content-outer\">\r\n              <div class=\"widget-content-wrapper\">\r\n                <div class=\"widget-content-left\">\r\n                  <div class=\"widget-heading\">Products Sold</div>\r\n                  <div class=\"widget-subheading\">Total revenue streams</div>\r\n                </div>\r\n                <div class=\"widget-content-right\">\r\n                  <div class=\"widget-numbers text-warning\">$3M</div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n    <div class=\"col-md-12 col-lg-4\">\r\n      <ul class=\"list-group list-group-flush\">\r\n        <li class=\"bg-transparent list-group-item\">\r\n          <div class=\"widget-content p-0\">\r\n            <div class=\"widget-content-outer\">\r\n              <div class=\"widget-content-wrapper\">\r\n                <div class=\"widget-content-left\">\r\n                  <div class=\"widget-heading\">Total Orders</div>\r\n                  <div class=\"widget-subheading\">Last year expenses</div>\r\n                </div>\r\n                <div class=\"widget-content-right\">\r\n                  <div class=\"widget-numbers text-success\">1896</div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </li>\r\n        <li class=\"bg-transparent list-group-item\">\r\n          <div class=\"widget-content p-0\">\r\n            <div class=\"widget-content-outer\">\r\n              <div class=\"widget-content-wrapper\">\r\n                <div class=\"widget-content-left\">\r\n                  <div class=\"widget-heading\">Clients</div>\r\n                  <div class=\"widget-subheading\">Total Clients Profit</div>\r\n                </div>\r\n                <div class=\"widget-content-right\">\r\n                  <div class=\"widget-numbers text-primary\">$12.6k</div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</div> -->\r\n"
+module.exports = "\r\n<div class=\"mb-3 card\">\r\n  <div class=\"card-header-tab card-header\">\r\n    <div class=\"card-header-title font-size-lg text-capitalize font-weight-normal\">\r\n      <i class=\"header-icon lnr-charts icon-gradient bg-happy-green\"> </i>\r\n      Select Country\r\n    </div>\r\n  </div>\r\n  <div class=\"no-gutters row\">\r\n    <div class=\"col-sm-10 col-md-10 col-xl-10 p-3\">\r\n      <!-- <ul>\r\n        <li *ngFor=\"let item of countries;let i = index\">\r\n          {{item.name}}\r\n          {{i}}\r\n        </li>\r\n      </ul> -->\r\n    \r\n    \r\n      <!-- <ul>\r\n        <li *ngFor=\"let item of confirmedData;let i = index\">\r\n          {{item.other_detail.Country}}\r\n        </li>\r\n      </ul> -->\r\n    \r\n    \r\n    \r\n        <ng-select class=\"mb-2 form-control\" [items]=\"countries\"\r\n          bindLabel=\"name\"\r\n          [(ngModel)]=\"country\"\r\n          [clearable]=\"false\"\r\n          dropdownPosition=\"botom\"\r\n          (change)=\"countryChange($event)\"\r\n          [searchable]=\"true\"\r\n        >\r\n        \r\n          <!-- <ng-template ng-header-tmp>\r\n            <div class=\"temp_class d-flex\">\r\n              <img class=\"search-icon-image\" src=\"{{ASSETS_PATH}}/images/icons/search_icon.png\" alt=\"search\"/>\r\n              <input class=\"input-Class-header\" type=\"text\" placeholder=\"Search Corporation\" (input)=\"countrySelect.filter($event.target.value)\"/>\r\n            </div>\r\n          </ng-template> -->\r\n        </ng-select>\r\n      <div class=\"divider m-0 d-md-none d-sm-block\"></div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"mb-3 card\">\r\n    <div class=\"card-header-tab card-header\">\r\n      <div class=\"card-header-title font-size-lg text-capitalize font-weight-normal\">\r\n        <i class=\"header-icon lnr-charts icon-gradient bg-happy-green\"> </i>\r\n        In {{country.name}}\r\n      </div>\r\n    </div>\r\n    <div class=\"no-gutters row\">\r\n      <div class=\"col-sm-6 col-md-4 col-xl-4\">\r\n        <div class=\"card no-shadow rm-border bg-transparent widget-chart text-left\">\r\n          <div class=\"icon-wrapper rounded-circle\">\r\n            <div class=\"icon-wrapper-bg opacity-10 bg-warning\"></div>\r\n          </div>\r\n          <div class=\"widget-chart-content\">\r\n            <div class=\"widget-subheading\">Active cases</div>\r\n            <div class=\"widget-numbers\">{{totalConfirmedCases}}</div>\r\n            <div class=\"widget-description opacity-8 text-focus\">\r\n              <div class=\"d-inline text-danger pr-1\">\r\n                <fa name=\"angle-down\"></fa>\r\n                <span class=\"pl-1\">\r\n                  {{(totalConfirmedCases / totalPopulation) * 100 | number : '1.2-2'}}%\r\n                </span>\r\n              </div>\r\n              \r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"divider m-0 d-md-none d-sm-block\"></div>\r\n      </div>\r\n      <div class=\"col-sm-6 col-md-4 col-xl-4\">\r\n        <div class=\"card no-shadow rm-border bg-transparent widget-chart text-left\">\r\n          <div class=\"icon-wrapper rounded-circle bg-success\">\r\n            <div class=\"icon-wrapper-bg opacity-9\"></div>\r\n          </div>\r\n          <div class=\"widget-chart-content\">\r\n            <div class=\"widget-subheading\">Recovered cases</div>\r\n            <div class=\"widget-numbers\"><span>{{totalRecoveredCases}}</span></div>\r\n            <div class=\"widget-description opacity-8 text-focus\">\r\n              Decreased Rate:\r\n              <span class=\"text-info pl-1\">\r\n                  <fa name=\"angle-down\"></fa>\r\n                  <span class=\"pl-1\">\r\n                      {{(totalRecoveredCases / totalConfirmedCases) * 100 | number : '1.2-2'}}%\r\n                  </span>\r\n              </span>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"divider m-0 d-md-none d-sm-block\"></div>\r\n      </div>\r\n      <div class=\"col-sm-12 col-md-4 col-xl-4\">\r\n        <div class=\"card no-shadow rm-border bg-transparent widget-chart text-left\">\r\n          <div class=\"icon-wrapper rounded-circle\">\r\n            <div class=\"icon-wrapper-bg opacity-9 bg-danger\"></div>\r\n          </div>\r\n          <div class=\"widget-chart-content\">\r\n            <div class=\"widget-subheading\">Fatal cases</div>\r\n            <div class=\"widget-numbers text-red\"><span>{{totalDeathCases}}</span></div>\r\n            <div class=\"widget-description text-errors\">\r\n              Decreased Rate\r\n              <span class=\"text-warning pl-1\">\r\n                  <fa name=\"angle-up\"></fa>\r\n                  <span class=\"pl-1\">\r\n                      {{(totalDeathCases / totalConfirmedCases) * 100 | number : '1.2-2'}}%\r\n                  </span>\r\n              </span>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-6\">\r\n      <div class=\"card main-card mb-3\">\r\n        <div class=\"card-header\">\r\n          {{country.name}} - Confirmed Vs Death Cases\r\n        </div>\r\n        <div class=\"card-body\">\r\n          <app-confirmed-actual-vs-death-actual></app-confirmed-actual-vs-death-actual>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-sm-12 col-lg-6\">\r\n      <div class=\"card main-card mb-3\">\r\n        <div class=\"card-header\">\r\n          {{country.name}} - Top 3 countries confirmed cases\r\n        </div>\r\n        <div class=\"card-body\">\r\n          <app-top-three-countries-confirmed-cases></app-top-three-countries-confirmed-cases>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-6\">\r\n      <div class=\"card main-card mb-3\">\r\n        <div class=\"card-header\">\r\n          {{country.name}} - Confirmed Actual Vs Confirmed Prediction \r\n        </div>\r\n        <div class=\"card-body\">\r\n          <app-confirmed-actual-vs-confirmed-predictions></app-confirmed-actual-vs-confirmed-predictions>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-sm-12 col-lg-6\">\r\n      <div class=\"card main-card mb-3\">\r\n        <div class=\"card-header\">\r\n          {{country.name}} - Recovery actual vs Recovoery Prediction Cases\r\n        </div>\r\n        <div class=\"card-body margin-auto\">\r\n          <app-recovery-actual-vs-recovery-prediction></app-recovery-actual-vs-recovery-prediction>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  \r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-12\">\r\n      <div class=\"card main-card mb-3\">\r\n        <div class=\"card-header\">\r\n          {{country.name}} - Death Actual vs Death Prediction Cases \r\n        </div>\r\n        <div class=\"card-body margin-auto\">\r\n          <app-death-actual-vs-death-prediction></app-death-actual-vs-death-prediction>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>"
 
 /***/ }),
 
@@ -1782,8 +1782,8 @@ __webpack_require__.r(__webpack_exports__);
 var _data_actual_confirmed_data_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../../data/actual/confirmed-data.json */ "./src/data/actual/confirmed-data.json", 1);
 /* harmony import */ var _data_actual_deaths_data_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../data/actual/deaths-data.json */ "./src/data/actual/deaths-data.json");
 var _data_actual_deaths_data_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../../data/actual/deaths-data.json */ "./src/data/actual/deaths-data.json", 1);
-/* harmony import */ var _data_actual_recovered_data_json__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../data/actual/recovered-data.json */ "./src/data/actual/recovered-data.json");
-var _data_actual_recovered_data_json__WEBPACK_IMPORTED_MODULE_6___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../../data/actual/recovered-data.json */ "./src/data/actual/recovered-data.json", 1);
+/* harmony import */ var _data_actual_recovery_data_json__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../data/actual/recovery-data.json */ "./src/data/actual/recovery-data.json");
+var _data_actual_recovery_data_json__WEBPACK_IMPORTED_MODULE_6___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../../data/actual/recovery-data.json */ "./src/data/actual/recovery-data.json", 1);
 /* harmony import */ var _data_countries_dataset_json__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../data/countries-dataset.json */ "./src/data/countries-dataset.json");
 var _data_countries_dataset_json__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../../data/countries-dataset.json */ "./src/data/countries-dataset.json", 1);
 
@@ -1805,7 +1805,7 @@ var AnalyticsComponent = /** @class */ (function () {
         this.getCountries();
         this.country = this.countries[4];
         this.selectedCountry = this.country;
-        this.totalPopulation = this.country.population;
+        this.totalPopulation = _data_countries_dataset_json__WEBPACK_IMPORTED_MODULE_7__[4].population;
         this.commonService.publishSelectedCountry(_constants_global_enums__WEBPACK_IMPORTED_MODULE_3__["CountryIndexPair"][this.selectedCountry.name]);
         this.totalConfirmedCases = this.getTotalConfirmedCases();
         this.totalDeathCases = this.getTotalDeathCases();
@@ -1834,8 +1834,8 @@ var AnalyticsComponent = /** @class */ (function () {
         return _data_actual_deaths_data_json__WEBPACK_IMPORTED_MODULE_5__["" + _constants_global_enums__WEBPACK_IMPORTED_MODULE_3__["CountryIndexPair"][this.selectedCountry.name]].data[lastdayIndex].count;
     };
     AnalyticsComponent.prototype.getTotalRecoveredCases = function () {
-        var lastdayIndex = _data_actual_recovered_data_json__WEBPACK_IMPORTED_MODULE_6__["" + _constants_global_enums__WEBPACK_IMPORTED_MODULE_3__["CountryIndexPair"][this.selectedCountry.name]].data.length - 1;
-        return _data_actual_recovered_data_json__WEBPACK_IMPORTED_MODULE_6__["" + _constants_global_enums__WEBPACK_IMPORTED_MODULE_3__["CountryIndexPair"][this.selectedCountry.name]].data[lastdayIndex].count;
+        var lastdayIndex = _data_actual_recovery_data_json__WEBPACK_IMPORTED_MODULE_6__["" + _constants_global_enums__WEBPACK_IMPORTED_MODULE_3__["CountryIndexPair"][this.selectedCountry.name]].data.length - 1;
+        return _data_actual_recovery_data_json__WEBPACK_IMPORTED_MODULE_6__["" + _constants_global_enums__WEBPACK_IMPORTED_MODULE_3__["CountryIndexPair"][this.selectedCountry.name]].data[lastdayIndex].count;
     };
     AnalyticsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1858,7 +1858,7 @@ var AnalyticsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"d-block\">\n  <canvas baseChart width=\"400\" height=\"400\"\n          [datasets]=\"lineChartData\"\n          [labels]=\"lineChartLabels\"\n          [options]=\"lineChartOptions\"\n          [colors]=\"lineChartColors\"\n          [legend]=\"lineChartLegend\"\n          [chartType]=\"lineChartType\"\n          [plugins]=\"lineChartPlugins\"\n          (chartHover)=\"chartHovered($event)\"\n          (chartClick)=\"chartClicked($event)\"></canvas>\n</div>\n<div class=\"table-responsive\">\n  <table class=\"table mt-3 table-condensed table-hover table-bordered\">\n    <thead>\n    <tr>\n      <th *ngFor=\"let label of lineChartLabels\">{{label}}</th>\n    </tr>\n    </thead>\n    <tr *ngFor=\"let d of lineChartData; let i=index\" [class]=\"'line-'+i\">\n      <td *ngFor=\"let label of lineChartLabels; let j=index\">{{d && d.data[j]}}</td>\n    </tr>\n  </table>\n</div>\n<!-- <div class=\"text-center\">\n  <button mat-button mat-raised-button color=\"primary\" class=\"mr-2 mb-2\" (click)=\"randomize()\">Randomize</button>\n  <button mat-button mat-raised-button color=\"primary\" class=\"mr-2 mb-2\" (click)=\"pushOne()\">Push</button>\n  <button mat-button mat-raised-button color=\"primary\" class=\"mr-2 mb-2\" (click)=\"changeColor()\">Recolor</button>\n  <button mat-button mat-raised-button color=\"primary\" class=\"mr-2 mb-2\" (click)=\"hideOne()\">Toggle Series B</button>\n  <button mat-button mat-raised-button color=\"primary\" class=\"mr-2 mb-2\" (click)=\"changeLabel()\">Change Label</button>\n</div> -->\n"
+module.exports = "\n<div class=\"d-block\">          \n  <h5 *ngIf=\"selectedCountryIndex > 4\">\n    Unavailable\n  </h5>\n  <canvas *ngIf=\"selectedCountryIndex <= 4\" baseChart width=\"400\" height=\"400\"\n          [datasets]=\"lineChartData\"\n          [labels]=\"lineChartLabels\"\n          [options]=\"lineChartOptions\"\n          [colors]=\"lineChartColors\"\n          [legend]=\"lineChartLegend\"\n          [chartType]=\"lineChartType\"\n          [plugins]=\"lineChartPlugins\"\n          (chartHover)=\"chartHovered($event)\"\n          (chartClick)=\"chartClicked($event)\"></canvas>\n</div>\n<div class=\"table-responsive\">\n  <table class=\"table mt-3 table-condensed table-hover table-bordered\">\n    <thead>\n    <tr>\n      <th *ngFor=\"let label of lineChartLabels\">{{label}}</th>\n    </tr>\n    </thead>\n    <tr *ngFor=\"let d of lineChartData; let i=index\" [class]=\"'line-'+i\">\n      <td *ngFor=\"let label of lineChartLabels; let j=index\">{{d && d.data[j]}}</td>\n    </tr>\n  </table>\n</div>\n"
 
 /***/ }),
 
@@ -1954,10 +1954,30 @@ var ConfirmedActualVsConfirmedPredictionsComponent = /** @class */ (function () 
             },
             plugins: {
                 datalabels: {
-                    align: 'top',
                     font: {
                         size: 11,
                         weight: 'bold',
+                    },
+                    offset: 3,
+                    align: function (ctx) {
+                        var idx = ctx.dataIndex;
+                        var val = ctx.dataset.data[idx];
+                        var datasets = ctx.chart.data.datasets;
+                        var minVal = val;
+                        var maxVal = val;
+                        var i, ilen, ival;
+                        for (i = 0, ilen = datasets.length; i < ilen; ++i) {
+                            if (i === ctx.datasetIndex) {
+                                continue;
+                            }
+                            ival = datasets[i].data[idx];
+                            minVal = minVal < ival ? minVal : ival;
+                            maxVal = maxVal > ival ? maxVal : ival;
+                            if (val > minVal && val < maxVal) {
+                                return 'center';
+                            }
+                        }
+                        return val <= minVal ? 'right' : 'end';
                     }
                 }
             },
@@ -2028,7 +2048,7 @@ var ConfirmedActualVsConfirmedPredictionsComponent = /** @class */ (function () 
         var actualTotalCount = 0;
         var PredictiveTotalCount = 0;
         for (var i = 0; i < this.confirmedActualData["" + this.selectedCountryIndex].data.length; i++) {
-            actualTotalCount = parseInt(this.confirmedActualData["" + this.selectedCountryIndex].data[i].count, 10);
+            // actualTotalCount = parseInt(this.confirmedActualData[`${this.selectedCountryIndex}`].data[i].count, 10);
             if (count === 30 || i === this.confirmedActualData["" + this.selectedCountryIndex].data.length - 1) {
                 actualTotalCount = parseInt(this.confirmedActualData["" + this.selectedCountryIndex].data[i].count, 10);
                 this.confirmedActualMonthlyData.push({ 'date': this.confirmedActualData["" + this.selectedCountryIndex].data[i].date, actualTotalCount: actualTotalCount });
@@ -2195,10 +2215,30 @@ var ConfirmedActualVsDeathActualComponent = /** @class */ (function () {
             },
             plugins: {
                 datalabels: {
-                    align: 'top',
                     font: {
                         size: 11,
                         weight: 'bold',
+                    },
+                    offset: 3,
+                    align: function (ctx) {
+                        var idx = ctx.dataIndex;
+                        var val = ctx.dataset.data[idx];
+                        var datasets = ctx.chart.data.datasets;
+                        var minVal = val;
+                        var maxVal = val;
+                        var i, ilen, ival;
+                        for (i = 0, ilen = datasets.length; i < ilen; ++i) {
+                            if (i === ctx.datasetIndex) {
+                                continue;
+                            }
+                            ival = datasets[i].data[idx];
+                            minVal = minVal < ival ? minVal : ival;
+                            maxVal = maxVal > ival ? maxVal : ival;
+                            if (val > minVal && val < maxVal) {
+                                return 'center';
+                            }
+                        }
+                        return val <= minVal ? 'right' : 'end';
                     }
                 }
             },
@@ -2273,7 +2313,7 @@ var ConfirmedActualVsDeathActualComponent = /** @class */ (function () {
             if (count === 30 || i === this.deathActualData["" + this.selectedCountryIndex].data.length - 1) {
                 actualTotalCount = parseInt(this.deathActualData["" + this.selectedCountryIndex].data[i].count, 10);
                 this.deathActualMonthlyCases.push(actualTotalCount);
-                this.lineChartLabels.push(this.commonService.addDays(new Date('01-22-2020'), parseInt(this.deathActualData["" + this.selectedCountryIndex].data[i].count, 10)));
+                this.lineChartLabels.push(this.deathActualData["" + this.selectedCountryIndex].data[i].date);
                 count = 0;
                 actualTotalCount = 0;
             }
@@ -2312,7 +2352,7 @@ var ConfirmedActualVsDeathActualComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  death-actual-vs-death-prediction works!\n</p>\n<!-- <div class=\"table-responsive\">\n  <table class=\"table mt-3 table-condensed table-hover table-bordered\">\n    <thead>\n    <tr>\n      <th *ngFor=\"let label of lineChartLabels\">{{label}}</th>\n    </tr>\n    </thead>\n    <tr *ngFor=\"let d of lineChartData; let i=index\" [class]=\"'line-'+i\">\n      <td *ngFor=\"let label of lineChartLabels; let j=index\">{{d && d.data[j]}}</td>\n    </tr>\n  </table>\n</div> -->\n"
+module.exports = "<div class=\"d-block\">\n  <h5 *ngIf=\"selectedCountryIndex > 4\">\n    Unavailable\n  </h5>\n  <canvas *ngIf=\"selectedCountryIndex <= 4\" baseChart width=\"600\" height=\"400\"\n          [datasets]=\"lineChartData\"\n          [labels]=\"lineChartLabels\"\n          [options]=\"lineChartOptions\"\n          [colors]=\"lineChartColors\"\n          [legend]=\"lineChartLegend\"\n          [chartType]=\"lineChartType\"\n          [plugins]=\"lineChartPlugins\"\n          (chartHover)=\"chartHovered($event)\"\n          (chartClick)=\"chartClicked($event)\"></canvas>\n</div>\n<div class=\"table-responsive\">\n  <table class=\"table mt-3 table-condensed table-hover table-bordered\">\n    <thead>\n    <tr>\n      <th *ngFor=\"let label of lineChartLabels\">{{label}}</th>\n    </tr>\n    </thead>\n    <tr *ngFor=\"let d of lineChartData; let i=index\" [class]=\"'line-'+i\">\n      <td *ngFor=\"let label of lineChartLabels; let j=index\">{{d && d.data[j]}}</td>\n    </tr>\n  </table>\n</div>\n  "
 
 /***/ }),
 
@@ -2339,12 +2379,193 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DeathActualVsDeathPredictionComponent", function() { return DeathActualVsDeathPredictionComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var chartjs_plugin_annotation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! chartjs-plugin-annotation */ "./node_modules/chartjs-plugin-annotation/src/index.js");
+/* harmony import */ var chartjs_plugin_annotation__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(chartjs_plugin_annotation__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _services_common_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../services/common.service */ "./src/app/services/common.service.ts");
+/* harmony import */ var _data_actual_deaths_data_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../data/actual/deaths-data.json */ "./src/data/actual/deaths-data.json");
+var _data_actual_deaths_data_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../../../data/actual/deaths-data.json */ "./src/data/actual/deaths-data.json", 1);
+/* harmony import */ var _constants_global_enums__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../constants/global-enums */ "./src/app/constants/global-enums.ts");
+
+
+
+
 
 
 var DeathActualVsDeathPredictionComponent = /** @class */ (function () {
-    function DeathActualVsDeathPredictionComponent() {
+    function DeathActualVsDeathPredictionComponent(commonService) {
+        var _this = this;
+        this.commonService = commonService;
+        // all data
+        this.deathActualData = _data_actual_deaths_data_json__WEBPACK_IMPORTED_MODULE_4__;
+        this.lineChartOptions = {
+            responsive: true,
+            scales: {
+                // We use this empty structure as a placeholder for dynamic theming.
+                xAxes: [
+                    {
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Prediction Cases',
+                            fontColor: '#F74300'
+                        },
+                        ticks: {
+                            fontColor: '#979797'
+                        }
+                    }
+                ],
+                yAxes: [
+                    {
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Actual Cases',
+                            fontColor: '#F74300'
+                        },
+                        gridLines: {
+                            color: '#dcd7d7',
+                        },
+                        ticks: {
+                            fontColor: '#979797',
+                            max: this.minYaxis,
+                            min: this.minYaxis,
+                            stepSize: Math.round((this.minYaxis - this.minYaxis) / (this.deathPredictionsMonthlyCases + 1))
+                        }
+                    }
+                ]
+            },
+            elements: {
+                line: {
+                    tension: 0.7,
+                    borderWidth: 1
+                }
+            },
+            plugins: {
+                datalabels: {
+                    font: {
+                        size: 11,
+                        weight: 'bold',
+                    },
+                    offset: 3,
+                    align: function (ctx) {
+                        var idx = ctx.dataIndex;
+                        var val = ctx.dataset.data[idx];
+                        var datasets = ctx.chart.data.datasets;
+                        var minVal = val;
+                        var maxVal = val;
+                        var i, ilen, ival;
+                        for (i = 0, ilen = datasets.length; i < ilen; ++i) {
+                            if (i === ctx.datasetIndex) {
+                                continue;
+                            }
+                            ival = datasets[i].data[idx];
+                            minVal = minVal < ival ? minVal : ival;
+                            maxVal = maxVal > ival ? maxVal : ival;
+                            if (val > minVal && val < maxVal) {
+                                return 'center';
+                            }
+                        }
+                        return val <= minVal ? 'right' : 'end';
+                    }
+                }
+            },
+            annotation: {
+                annotations: [],
+            },
+            layout: {},
+            legend: {
+                display: true,
+            }
+        };
+        this.lineChartColors = [
+            {
+                backgroundColor: 'rgba(0,0,0,0)',
+                borderColor: '#DA075F',
+                pointBackgroundColor: '#DA075F',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: '#DA075F'
+            },
+            {
+                backgroundColor: 'rgba(0,0,0,0)',
+                borderColor: '#FE0002',
+                pointBackgroundColor: '#FE0002',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: '#FE0002'
+            }
+        ];
+        this.lineChartLegend = true;
+        this.lineChartType = 'line';
+        this.lineChartPlugins = [chartjs_plugin_annotation__WEBPACK_IMPORTED_MODULE_2__];
+        this.commonService.selectedCountry$.subscribe(function (countryIndex) {
+            _this.deathActualMonthlyCases = [];
+            _this.deathPredictionsMonthlyCases = [];
+            _this.lineChartLabels = [];
+            _this.selectedCountryIndex = countryIndex;
+            _this.readPredictionData();
+            _this.lineChartData = [
+                { data: _this.deathActualMonthlyCases, label: 'Actual Data' },
+                { data: _this.deathPredictionsMonthlyCases, label: 'Prediction Data' }
+            ];
+            console.log(_this.deathActualMonthlyCases, _this.deathPredictionsMonthlyCases);
+        });
     }
     DeathActualVsDeathPredictionComponent.prototype.ngOnInit = function () {
+    };
+    DeathActualVsDeathPredictionComponent.prototype.readPredictionData = function () {
+        var _this = this;
+        var selectedCountryName = _constants_global_enums__WEBPACK_IMPORTED_MODULE_5__["CountryIndexPair"][this.selectedCountryIndex].toLowerCase();
+        __webpack_require__("./src/data/predictions lazy recursive ^\\.\\/.*\\/recovery\\-data\\.json$")("./" + selectedCountryName + "/recovery-data.json")
+            .then(function (data) {
+            // JUST USE THE LIBRARY
+            _this.deathPredictionsData = data.Sheet1;
+            _this.getDeathActualMonthlyData();
+            _this.getDeathPredictiveMonthlyData();
+            _this.getMinMaxXValue();
+        })
+            .catch(function (error) {
+            console.log(error);
+        });
+    };
+    // get monthly Death-actual data
+    DeathActualVsDeathPredictionComponent.prototype.getDeathActualMonthlyData = function () {
+        var count = 0;
+        var actualTotalCount = 0;
+        var PredictiveTotalCount = 0;
+        for (var i = 0; i < this.deathActualData["" + this.selectedCountryIndex].data.length; i++) {
+            if (count === 30 || i === this.deathActualData["" + this.selectedCountryIndex].data.length - 1) {
+                actualTotalCount = parseInt(this.deathActualData["" + this.selectedCountryIndex].data[i].count, 10);
+                this.deathActualMonthlyCases.push(actualTotalCount);
+                count = 0;
+                actualTotalCount = 0;
+            }
+            count++;
+        }
+    };
+    // get monthly death-prediction data
+    DeathActualVsDeathPredictionComponent.prototype.getDeathPredictiveMonthlyData = function () {
+        var count = 0;
+        var actualTotalCount = 0;
+        var PredictiveTotalCount = 0;
+        for (var i = 0; i < this.deathPredictionsData.length; i++) {
+            if (count === 30 || i === this.deathPredictionsData.length - 1) {
+                actualTotalCount = parseInt(this.deathPredictionsData[i]['Scored Labels'], 10);
+                this.deathPredictionsMonthlyCases.push(actualTotalCount);
+                this.lineChartLabels.push(this.commonService.addDays(new Date('01-22-2020'), parseInt(this.deathPredictionsData[i].Date, 10)));
+                count = 0;
+                actualTotalCount = 0;
+            }
+            count++;
+        }
+    };
+    DeathActualVsDeathPredictionComponent.prototype.getMinMaxXValue = function () {
+        this.minYaxisDeathActualData = this.commonService.getMinimumValue(this.deathActualMonthlyCases);
+        this.maxYaxisDeathActualData = this.commonService.getMaximumValue(this.deathActualMonthlyCases);
+        this.minYaxisDeathPredictionData = this.commonService.getMinimumValue(this.deathPredictionsMonthlyCases);
+        this.maxYaxisDeathPredictionData = this.commonService.getMaximumValue(this.deathPredictionsMonthlyCases);
+        this.minYaxis = this.minYaxisDeathActualData < this.minYaxisDeathPredictionData ? this.minYaxisDeathActualData : this.minYaxisDeathPredictionData;
+        this.maxYaxis = this.maxYaxisDeathActualData > this.maxYaxisDeathPredictionData ? this.maxYaxisDeathActualData : this.maxYaxisDeathPredictionData;
+        console.log(this.minYaxisDeathActualData, this.minYaxisDeathPredictionData, 'min = ', this.minYaxis);
+        console.log(this.maxYaxisDeathActualData, this.maxYaxisDeathPredictionData, 'max = ', this.maxYaxis);
     };
     DeathActualVsDeathPredictionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -2352,7 +2573,7 @@ var DeathActualVsDeathPredictionComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./death-actual-vs-death-prediction.component.html */ "./src/app/DemoPages/Dashboards/charts/death-actual-vs-death-prediction/death-actual-vs-death-prediction.component.html"),
             styles: [__webpack_require__(/*! ./death-actual-vs-death-prediction.component.sass */ "./src/app/DemoPages/Dashboards/charts/death-actual-vs-death-prediction/death-actual-vs-death-prediction.component.sass")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_common_service__WEBPACK_IMPORTED_MODULE_3__["CommonService"]])
     ], DeathActualVsDeathPredictionComponent);
     return DeathActualVsDeathPredictionComponent;
 }());
@@ -2368,7 +2589,7 @@ var DeathActualVsDeathPredictionComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  recovery-actual-vs-recovery-prediction works!\n</p>\n\n<!-- <div class=\"table-responsive\">\n  <table class=\"table mt-3 table-condensed table-hover table-bordered\">\n    <thead>\n    <tr>\n      <th *ngFor=\"let label of lineChartLabels\">{{label}}</th>\n    </tr>\n    </thead>\n    <tr *ngFor=\"let d of lineChartData; let i=index\" [class]=\"'line-'+i\">\n      <td *ngFor=\"let label of lineChartLabels; let j=index\">{{d && d.data[j]}}</td>\n    </tr>\n  </table>\n</div> -->\n"
+module.exports = "<div class=\"d-block\">      \n  <h5 *ngIf=\"selectedCountryIndex > 4\">\n    Unavailable\n  </h5>\n  <canvas *ngIf=\"selectedCountryIndex <= 4\" baseChart width=\"400\" height=\"400\"\n          [datasets]=\"lineChartData\"\n          [labels]=\"lineChartLabels\"\n          [options]=\"lineChartOptions\"\n          [colors]=\"lineChartColors\"\n          [legend]=\"lineChartLegend\"\n          [chartType]=\"lineChartType\"\n          [plugins]=\"lineChartPlugins\"\n          (chartHover)=\"chartHovered($event)\"\n          (chartClick)=\"chartClicked($event)\"></canvas>\n</div>\n<div class=\"table-responsive\">\n  <table class=\"table mt-3 table-condensed table-hover table-bordered\">\n    <thead>\n    <tr>\n      <th *ngFor=\"let label of lineChartLabels\">{{label}}</th>\n    </tr>\n    </thead>\n    <tr *ngFor=\"let d of lineChartData; let i=index\" [class]=\"'line-'+i\">\n      <td *ngFor=\"let label of lineChartLabels; let j=index\">{{d && d.data[j]}}</td>\n    </tr>\n  </table>\n</div>\n  "
 
 /***/ }),
 
@@ -2395,12 +2616,193 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RecoveryActualVsRecoveryPredictionComponent", function() { return RecoveryActualVsRecoveryPredictionComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var chartjs_plugin_annotation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! chartjs-plugin-annotation */ "./node_modules/chartjs-plugin-annotation/src/index.js");
+/* harmony import */ var chartjs_plugin_annotation__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(chartjs_plugin_annotation__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _services_common_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../services/common.service */ "./src/app/services/common.service.ts");
+/* harmony import */ var _data_actual_recovery_data_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../data/actual/recovery-data.json */ "./src/data/actual/recovery-data.json");
+var _data_actual_recovery_data_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../../../data/actual/recovery-data.json */ "./src/data/actual/recovery-data.json", 1);
+/* harmony import */ var _constants_global_enums__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../constants/global-enums */ "./src/app/constants/global-enums.ts");
+
+
+
+
 
 
 var RecoveryActualVsRecoveryPredictionComponent = /** @class */ (function () {
-    function RecoveryActualVsRecoveryPredictionComponent() {
+    function RecoveryActualVsRecoveryPredictionComponent(commonService) {
+        var _this = this;
+        this.commonService = commonService;
+        // all data
+        this.recoveryActualData = _data_actual_recovery_data_json__WEBPACK_IMPORTED_MODULE_4__;
+        this.lineChartOptions = {
+            responsive: true,
+            scales: {
+                // We use this empty structure as a placeholder for dynamic theming.
+                xAxes: [
+                    {
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Prediction Cases',
+                            fontColor: '#F74300'
+                        },
+                        ticks: {
+                            fontColor: '#979797'
+                        }
+                    }
+                ],
+                yAxes: [
+                    {
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Actual Cases',
+                            fontColor: '#F74300'
+                        },
+                        gridLines: {
+                            color: '#dcd7d7',
+                        },
+                        ticks: {
+                            fontColor: '#979797',
+                            max: this.minYaxis,
+                            min: this.minYaxis,
+                            stepSize: Math.round((this.minYaxis - this.minYaxis) / (this.recoveryPredictionsMonthlyCases + 1))
+                        }
+                    }
+                ]
+            },
+            elements: {
+                line: {
+                    tension: 0.7,
+                    borderWidth: 1
+                }
+            },
+            plugins: {
+                datalabels: {
+                    font: {
+                        size: 11,
+                        weight: 'bold',
+                    },
+                    offset: 3,
+                    align: function (ctx) {
+                        var idx = ctx.dataIndex;
+                        var val = ctx.dataset.data[idx];
+                        var datasets = ctx.chart.data.datasets;
+                        var minVal = val;
+                        var maxVal = val;
+                        var i, ilen, ival;
+                        for (i = 0, ilen = datasets.length; i < ilen; ++i) {
+                            if (i === ctx.datasetIndex) {
+                                continue;
+                            }
+                            ival = datasets[i].data[idx];
+                            minVal = minVal < ival ? minVal : ival;
+                            maxVal = maxVal > ival ? maxVal : ival;
+                            if (val > minVal && val < maxVal) {
+                                return 'center';
+                            }
+                        }
+                        return val <= minVal ? 'right' : 'end';
+                    }
+                }
+            },
+            annotation: {
+                annotations: [],
+            },
+            layout: {},
+            legend: {
+                display: true,
+            }
+        };
+        this.lineChartColors = [
+            {
+                backgroundColor: 'rgba(0,0,0,0)',
+                borderColor: '#DA075F',
+                pointBackgroundColor: '#DA075F',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: '#DA075F'
+            },
+            {
+                backgroundColor: 'rgba(0,0,0,0)',
+                borderColor: '#FE0002',
+                pointBackgroundColor: '#FE0002',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: '#FE0002'
+            }
+        ];
+        this.lineChartLegend = true;
+        this.lineChartType = 'line';
+        this.lineChartPlugins = [chartjs_plugin_annotation__WEBPACK_IMPORTED_MODULE_2__];
+        this.commonService.selectedCountry$.subscribe(function (countryIndex) {
+            _this.recoveryActualMonthlyCases = [];
+            _this.recoveryPredictionsMonthlyCases = [];
+            _this.lineChartLabels = [];
+            _this.selectedCountryIndex = countryIndex;
+            _this.readPredictionData();
+            _this.lineChartData = [
+                { data: _this.recoveryActualMonthlyCases, label: 'Actual Data' },
+                { data: _this.recoveryPredictionsMonthlyCases, label: 'Prediction Data' }
+            ];
+            // console.log(this.recoveryActualMonthlyCases, this.recoveryPredictionsMonthlyCases);
+        });
     }
     RecoveryActualVsRecoveryPredictionComponent.prototype.ngOnInit = function () {
+    };
+    RecoveryActualVsRecoveryPredictionComponent.prototype.readPredictionData = function () {
+        var _this = this;
+        var selectedCountryName = _constants_global_enums__WEBPACK_IMPORTED_MODULE_5__["CountryIndexPair"][this.selectedCountryIndex].toLowerCase();
+        __webpack_require__("./src/data/predictions lazy recursive ^\\.\\/.*\\/recovery\\-data\\.json$")("./" + selectedCountryName + "/recovery-data.json")
+            .then(function (data) {
+            // JUST USE THE LIBRARY
+            _this.recoveryPredictionsData = data.Sheet1;
+            _this.getRecoveryActualMonthlyData();
+            _this.getRecoveryPredictiveMonthlyData();
+            _this.getMinMaxXValue();
+        })
+            .catch(function (error) {
+            console.log(error);
+        });
+    };
+    // get monthly recovery-actual data
+    RecoveryActualVsRecoveryPredictionComponent.prototype.getRecoveryActualMonthlyData = function () {
+        var count = 0;
+        var actualTotalCount = 0;
+        var PredictiveTotalCount = 0;
+        for (var i = 0; i < this.recoveryActualData["" + this.selectedCountryIndex].data.length; i++) {
+            if (count === 30 || i === this.recoveryActualData["" + this.selectedCountryIndex].data.length - 1) {
+                actualTotalCount = parseInt(this.recoveryActualData["" + this.selectedCountryIndex].data[i].count, 10);
+                this.recoveryActualMonthlyCases.push(actualTotalCount);
+                count = 0;
+                actualTotalCount = 0;
+            }
+            count++;
+        }
+    };
+    // get monthly recovery-prediction data
+    RecoveryActualVsRecoveryPredictionComponent.prototype.getRecoveryPredictiveMonthlyData = function () {
+        var count = 0;
+        var actualTotalCount = 0;
+        var PredictiveTotalCount = 0;
+        for (var i = 0; i < this.recoveryPredictionsData.length; i++) {
+            if (count === 30 || i === this.recoveryPredictionsData.length - 1) {
+                actualTotalCount = parseInt(this.recoveryPredictionsData[i]['Scored Labels'], 10);
+                this.recoveryPredictionsMonthlyCases.push(actualTotalCount);
+                this.lineChartLabels.push(this.commonService.addDays(new Date('01-22-2020'), parseInt(this.recoveryPredictionsData[i].Date, 10)));
+                count = 0;
+                actualTotalCount = 0;
+            }
+            count++;
+        }
+    };
+    RecoveryActualVsRecoveryPredictionComponent.prototype.getMinMaxXValue = function () {
+        this.minYaxisRecoveryActualData = this.commonService.getMinimumValue(this.recoveryActualMonthlyCases);
+        this.maxYaxisRecoveryActualData = this.commonService.getMaximumValue(this.recoveryActualMonthlyCases);
+        this.minYaxisRecoveryPredictionData = this.commonService.getMinimumValue(this.recoveryPredictionsMonthlyCases);
+        this.maxYaxisRecoveryPredictionData = this.commonService.getMaximumValue(this.recoveryPredictionsMonthlyCases);
+        this.minYaxis = this.minYaxisRecoveryActualData < this.minYaxisRecoveryPredictionData ? this.minYaxisRecoveryActualData : this.minYaxisRecoveryPredictionData;
+        this.maxYaxis = this.maxYaxisRecoveryActualData > this.maxYaxisRecoveryPredictionData ? this.maxYaxisRecoveryActualData : this.maxYaxisRecoveryPredictionData;
+        // console.log(this.minYaxisRecoveryActualData, this.minYaxisRecoveryPredictionData, 'min = ', this.minYaxis);
+        // console.log(this.maxYaxisRecoveryActualData, this.maxYaxisRecoveryPredictionData, 'max = ', this.maxYaxis);
     };
     RecoveryActualVsRecoveryPredictionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -2408,7 +2810,7 @@ var RecoveryActualVsRecoveryPredictionComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./recovery-actual-vs-recovery-prediction.component.html */ "./src/app/DemoPages/Dashboards/charts/recovery-actual-vs-recovery-prediction/recovery-actual-vs-recovery-prediction.component.html"),
             styles: [__webpack_require__(/*! ./recovery-actual-vs-recovery-prediction.component.sass */ "./src/app/DemoPages/Dashboards/charts/recovery-actual-vs-recovery-prediction/recovery-actual-vs-recovery-prediction.component.sass")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_common_service__WEBPACK_IMPORTED_MODULE_3__["CommonService"]])
     ], RecoveryActualVsRecoveryPredictionComponent);
     return RecoveryActualVsRecoveryPredictionComponent;
 }());
@@ -2476,7 +2878,7 @@ var TopThreeCountriesConfirmedCasesComponent = /** @class */ (function () {
                         scaleLabel: {
                             display: true,
                             labelString: 'Over Time',
-                            fontColor: '#dcd7d7'
+                            fontColor: '#F74300'
                         },
                         ticks: {
                             fontColor: '#979797'
@@ -2488,7 +2890,7 @@ var TopThreeCountriesConfirmedCasesComponent = /** @class */ (function () {
                         scaleLabel: {
                             display: true,
                             labelString: 'Confirmed Cases',
-                            fontColor: '#dcd7d7'
+                            fontColor: '#F74300'
                         },
                         gridLines: {
                             color: '#dcd7d7',
@@ -2510,10 +2912,33 @@ var TopThreeCountriesConfirmedCasesComponent = /** @class */ (function () {
             },
             plugins: {
                 datalabels: {
-                    align: 'top',
                     font: {
                         size: 11,
                         weight: 'bold',
+                    },
+                    offset: 3,
+                    padding: {
+                        left: 10
+                    },
+                    align: function (ctx) {
+                        var idx = ctx.dataIndex;
+                        var val = ctx.dataset.data[idx];
+                        var datasets = ctx.chart.data.datasets;
+                        var minVal = val;
+                        var maxVal = val;
+                        var i, ilen, ival;
+                        for (i = 0, ilen = datasets.length; i < ilen; ++i) {
+                            if (i === ctx.datasetIndex) {
+                                continue;
+                            }
+                            ival = datasets[i].data[idx];
+                            minVal = minVal < ival ? minVal : ival;
+                            maxVal = maxVal > ival ? maxVal : ival;
+                            if (val > minVal && val < maxVal) {
+                                return 'center';
+                            }
+                        }
+                        return val <= minVal ? 'right' : 'end';
                     }
                 }
             },
@@ -2618,7 +3043,7 @@ var TopThreeCountriesConfirmedCasesComponent = /** @class */ (function () {
             if (count === 30 || i === this.confirmedActualData["" + this.thirdCountryIndex].data.length - 1) {
                 actualTotalCount = parseInt(this.confirmedActualData["" + this.thirdCountryIndex].data[i].count, 10);
                 this.confirmedActualDataThirdCases.push(actualTotalCount);
-                this.lineChartLabels.push(this.commonService.addDays(new Date('01-22-2020'), parseInt(this.confirmedActualData["" + this.thirdCountryIndex].data[i].count, 10)));
+                this.lineChartLabels.push(this.confirmedActualData["" + this.thirdCountryIndex].data[i].date);
                 count = 0;
                 actualTotalCount = 0;
             }
@@ -3664,7 +4089,7 @@ var LogoComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div [class]=\"'app-sidebar sidebar-shadow ' + (config$ | async).sidebarTheme\" (mouseover)=\"sidebarHover()\"\r\n     (mouseout)=\"sidebarHover()\">\r\n  <div class=\"app-header__logo\">\r\n    <div class=\"logo-src\"></div>\r\n  </div>\r\n  <div class=\"app-sidebar-content\">\r\n    <div class=\"app-sidebar-scroll\">\r\n      <perfect-scrollbar [autoPropagation]=\"true\">\r\n        <div class=\"v-sidebar-menu vsm-default\">\r\n          <div class=\"vsm-list\">\r\n            <!-- ///////////////////// -->\r\n            <div class=\"col-sm-6 col-md-4 col-xl-4\">\r\n                <div class=\"card no-shadow rm-border bg-transparent widget-chart text-left\">\r\n                  <div class=\"icon-wrapper rounded-circle\">\r\n                    <div class=\"icon-wrapper-bg opacity-10 bg-warning\"></div>\r\n                  </div>\r\n                  <div class=\"widget-chart-content\">\r\n                    <div class=\"widget-subheading\">Active cases</div>\r\n                    <div class=\"widget-numbers\">1,7M</div>\r\n                    <div class=\"widget-description opacity-8 text-focus\">\r\n                      <div class=\"d-inline text-danger pr-1\">\r\n                        <fa name=\"angle-down\"></fa>\r\n                        <span class=\"pl-1\">54.1%</span>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"divider m-0 d-md-none d-sm-block\"></div>\r\n              </div>\r\n              <div class=\"col-sm-6 col-md-4 col-xl-4\">\r\n                <div class=\"card no-shadow rm-border bg-transparent widget-chart text-left\">\r\n                  <div class=\"icon-wrapper rounded-circle\">\r\n                    <div class=\"icon-wrapper-bg opacity-9 bg-success\"></div>\r\n                  </div>\r\n                  <div class=\"widget-chart-content\">\r\n                    <div class=\"widget-subheading\">Recovered cases</div>\r\n                    <div class=\"widget-numbers\"><span>9M</span></div>\r\n                    <div class=\"widget-description opacity-8 text-focus\">\r\n                      <span class=\"text-info pl-1\">\r\n                          <fa name=\"angle-down\"></fa>\r\n                          <span class=\"pl-1\">14.1%</span>\r\n                      </span>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"divider m-0 d-md-none d-sm-block\"></div>\r\n              </div>\r\n              <div class=\"col-sm-12 col-md-4 col-xl-4\">\r\n                <div class=\"card no-shadow rm-border bg-transparent widget-chart text-left\">\r\n                  <div class=\"icon-wrapper rounded-circle\">\r\n                    <div class=\"icon-wrapper-bg opacity-9 bg-danger\"></div>\r\n                  </div>\r\n                  <div class=\"widget-chart-content\">\r\n                    <div class=\"widget-subheading\">Fatal cases</div>\r\n                    <div class=\"widget-numbers\"><span>563</span></div>\r\n                    <div class=\"widget-description text-focus\">\r\n                      <span class=\"text-warning pl-1\">\r\n                          <fa name=\"angle-up\"></fa>\r\n                          <span class=\"pl-1\">7.35%</span>\r\n                      </span>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <!-- ///////////////////// -->\r\n            <!-- <ngb-accordion [destroyOnHide]=\"false\" [closeOthers]=\"true\" [activeIds]=\"extraParameter\">\r\n              <ngb-panel>\r\n                <ng-template ngbPanelHeader>\r\n                  <div class=\"vsm-header\">Main Navigation</div>\r\n                </ng-template>\r\n              </ngb-panel>\r\n              <ngb-panel id=\"dashboardsMenu\">\r\n                <ng-template ngbPanelHeader>\r\n                  <button ngbPanelToggle class=\"vsm-link\">\r\n                    <i class=\"vsm-icon pe-7s-rocket\"></i>\r\n                    <span class=\"vsm-title\">Dashboards</span>\r\n                    <i class=\"vsm-arrow\"></i>\r\n                  </button>\r\n                </ng-template>\r\n                <ng-template ngbPanelContent>\r\n                  <div class=\"vsm-dropdown\">\r\n                    <div class=\"vsm-list\">\r\n                      <div class=\"vsm-item\"><a routerLink=\"\" routerLinkActive=\"active-item\"\r\n                                               [routerLinkActiveOptions]=\"{exact: true}\" class=\"vsm-link\"><span\r\n                        class=\"vsm-title\">Analytics</span></a>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </ng-template>\r\n              </ngb-panel>\r\n              <ngb-panel id=\"pagesMenu\">\r\n                <ng-template ngbPanelHeader>\r\n                  <button ngbPanelToggle class=\"vsm-link\">\r\n                    <i class=\"vsm-icon pe-7s-browser\"></i>\r\n                    <span class=\"vsm-title\">Pages</span>\r\n                    <i class=\"vsm-arrow\"></i>\r\n                  </button>\r\n                </ng-template>\r\n                <ng-template ngbPanelContent>\r\n                  <div class=\"vsm-dropdown\">\r\n                    <div class=\"vsm-list\">\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/pages/login-boxed\" class=\"vsm-link\"><span\r\n                          class=\"vsm-title\">Login Boxed</span></a>\r\n                      </div>\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/pages/register-boxed\" class=\"vsm-link\"><span\r\n                          class=\"vsm-title\">Register Boxed</span></a>\r\n                      </div>\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/pages/forgot-password-boxed\"\r\n                           class=\"vsm-link\"><span class=\"vsm-title\">Forgot Password Boxed</span></a>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </ng-template>\r\n              </ngb-panel>\r\n              <ngb-panel>\r\n                <ng-template ngbPanelHeader>\r\n                  <div class=\"vsm-header\">Bootstrap Components</div>\r\n                </ng-template>\r\n              </ngb-panel>\r\n              <ngb-panel id=\"elementsMenu\">\r\n                <ng-template ngbPanelHeader>\r\n                  <button ngbPanelToggle class=\"vsm-link\">\r\n                    <i class=\"vsm-icon pe-7s-diamond\"></i>\r\n                    <span class=\"vsm-title\">Elements</span>\r\n                    <i class=\"vsm-arrow\"></i>\r\n                  </button>\r\n                </ng-template>\r\n                <ng-template ngbPanelContent>\r\n                  <div class=\"vsm-dropdown\">\r\n                    <div class=\"vsm-list\">\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/elements/buttons-standard\"\r\n                           class=\"vsm-link\"> <span\r\n                          class=\"vsm-title\">Standard Buttons</span></a>\r\n                      </div>\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/elements/dropdowns\" class=\"vsm-link\"> <span\r\n                          class=\"vsm-title\">Dropdowns</span></a>\r\n                      </div>\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/elements/icons\" class=\"vsm-link\"><span\r\n                          class=\"vsm-title\">Icons</span></a>\r\n                      </div>\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/elements/cards\" class=\"vsm-link\"><span\r\n                          class=\"vsm-title\">Cards</span></a>\r\n                      </div>\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/elements/list-group\" class=\"vsm-link\"> <span\r\n                          class=\"vsm-title\">List Groups</span></a>\r\n                      </div>\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/elements/timeline\" class=\"vsm-link\"> <span\r\n                          class=\"vsm-title\">Timeline</span></a>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </ng-template>\r\n              </ngb-panel>\r\n              <ngb-panel id=\"componentsMenu\">\r\n                <ng-template ngbPanelHeader>\r\n                  <button ngbPanelToggle class=\"vsm-link\">\r\n                    <i class=\"vsm-icon pe-7s-car\"></i>\r\n                    <span class=\"vsm-title\">Components</span>\r\n                    <i class=\"vsm-arrow\"></i>\r\n                  </button>\r\n                </ng-template>\r\n                <ng-template ngbPanelContent>\r\n                  <div class=\"vsm-dropdown\">\r\n                    <div class=\"vsm-list\">\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/components/tabs\" class=\"vsm-link\"><span\r\n                          class=\"vsm-title\">Tabs</span></a>\r\n                      </div>\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/components/accordions\" class=\"vsm-link\"> <span\r\n                          class=\"vsm-title\">Accordions</span></a>\r\n                      </div>\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/components/modals\" class=\"vsm-link\"> <span\r\n                          class=\"vsm-title\">Modals</span></a>\r\n                      </div>\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/components/progress-bar\" class=\"vsm-link\"> <span\r\n                          class=\"vsm-title\">Progress Bar</span></a>\r\n                      </div>\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/components/tooltips-popovers\"\r\n                           class=\"vsm-link\"> <span\r\n                          class=\"vsm-title\">Tooltips &amp; Popovers</span></a>\r\n                      </div>\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/components/carousel\" class=\"vsm-link\"> <span\r\n                          class=\"vsm-title\">Carousel</span></a>\r\n                      </div>\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/components/pagination\" class=\"vsm-link\"> <span\r\n                          class=\"vsm-title\">Pagination</span></a>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </ng-template>\r\n              </ngb-panel>\r\n              <ngb-panel id=\"formElementsMenu\">\r\n                <ng-template ngbPanelHeader>\r\n                  <button ngbPanelToggle class=\"vsm-link\">\r\n                    <i class=\"vsm-icon pe-7s-helm\"></i>\r\n                    <span class=\"vsm-title\">Form Elements</span>\r\n                    <i class=\"vsm-arrow\"></i>\r\n                  </button>\r\n                </ng-template>\r\n                <ng-template ngbPanelContent>\r\n                  <div class=\"vsm-dropdown\">\r\n                    <div class=\"vsm-list\">\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/forms/controls\" class=\"vsm-link\"><span\r\n                          class=\"vsm-title\">Controls</span></a>\r\n                      </div>\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/forms/layouts\" class=\"vsm-link\"><span\r\n                          class=\"vsm-title\">Layouts</span></a>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </ng-template>\r\n              </ngb-panel>\r\n              <ngb-panel id=\"tablesMenu\">\r\n                <ng-template ngbPanelHeader>\r\n                  <button ngbPanelToggle class=\"vsm-link\">\r\n                    <i class=\"vsm-icon pe-7s-safe\"></i>\r\n                    <span class=\"vsm-title\">Tables</span>\r\n                    <i class=\"vsm-arrow\"></i>\r\n                  </button>\r\n                </ng-template>\r\n                <ng-template ngbPanelContent>\r\n                  <div class=\"vsm-dropdown\">\r\n                    <div class=\"vsm-list\">\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/tables/bootstrap\" class=\"vsm-link\"> <span\r\n                          class=\"vsm-title\">Bootstrap 4 Tables</span></a>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </ng-template>\r\n              </ngb-panel>\r\n              <ngb-panel>\r\n                <ng-template ngbPanelHeader>\r\n                  <div class=\"vsm-header\">Dashboard Boxes</div>\r\n                </ng-template>\r\n              </ngb-panel>\r\n              <ngb-panel id=\"pagesMenu3\">\r\n                <ng-template ngbPanelHeader>\r\n                  <button ngbPanelToggle class=\"vsm-link\">\r\n                    <i class=\"vsm-icon pe-7s-graph2\"></i>\r\n                    <span class=\"vsm-title\">Chart Boxes</span>\r\n                    <i class=\"vsm-arrow\"></i>\r\n                  </button>\r\n                </ng-template>\r\n                <ng-template ngbPanelContent>\r\n                  <div class=\"vsm-dropdown\">\r\n                    <div class=\"vsm-list\">\r\n                      <div class=\"vsm-item\">\r\n                        <a routerLinkActive=\"active-item\" routerLink=\"/widgets/chart-boxes-3\" class=\"vsm-link\">\r\n                          <span class=\"vsm-title\">Variation 3</span></a>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </ng-template>\r\n              </ngb-panel>\r\n            </ngb-accordion>\r\n            <div class=\"vsm-header\">Charts</div>\r\n            <div class=\"vsm-item\">\r\n              <a routerLink=\"/charts/chartjs\" routerLinkActive=\"active-item\" class=\"vsm-link\">\r\n                <i class=\"vsm-icon pe-7s-graph2\"></i>\r\n                <span class=\"vsm-title\">ChartJS</span>\r\n              </a>\r\n            </div>\r\n\r\n            <div class=\"vsm-header\">Country</div>\r\n            <div class=\"vsm-item\">\r\n              <div class=\"position-relative form-group\">\r\n                <label for=\"exampleSelect\">Select Country</label>\r\n                <select name=\"select\" id=\"exampleSelect\" class=\"form-control\">\r\n                  <option>1</option>\r\n                  <option>2</option>\r\n                  <option>3</option>\r\n                  <option>4</option>\r\n                  <option>5</option>\r\n                </select>\r\n                <ng-select placeholder=\"Select Corporation\" [items]=\"countries\"\r\n                  bindLabel=\"name\"\r\n                  [(ngModel)]=\"country\"\r\n                  [clearable]=\"false\"\r\n                  dropdownPosition=\"botom\"\r\n                  (change)=\"countryChange($event)\"\r\n                  [searchable]=\"false\"\r\n                  #corporationSelect\r\n                >\r\n                \r\n                  <ng-template ng-header-tmp>\r\n                    <div class=\"temp_class\">\r\n                      <img class=\"search-icon-image\" src=\"{{ASSETS_PATH}}/icons/search_icon.png\" alt=\"search\"/>\r\n                      <input class=\"input-Class-header\" type=\"text\" placeholder=\"Search Corporation\" (input)=\"corporationSelect.filter($event.target.value)\"/>\r\n                    </div>\r\n                  </ng-template>\r\n                </ng-select>\r\n              </div>\r\n            </div> -->\r\n          </div>\r\n        </div>\r\n      </perfect-scrollbar>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div [class]=\"'app-sidebar sidebar-shadow ' + (config$ | async).sidebarTheme\" (mouseover)=\"sidebarHover()\"\r\n     (mouseout)=\"sidebarHover()\">\r\n  <div class=\"app-header__logo\">\r\n    <div class=\"logo-src\"></div>\r\n  </div>\r\n  <div class=\"app-sidebar-content\">\r\n    <div class=\"app-sidebar-scroll\">\r\n      <perfect-scrollbar [autoPropagation]=\"true\">\r\n        <div class=\"v-sidebar-menu vsm-default\">\r\n          <div class=\"vsm-list\">\r\n            <!-- ///////////////////// -->\r\n            <div class=\"col-sm-6 col-md-4 col-xl-4\">\r\n                <div class=\"card no-shadow rm-border bg-transparent widget-chart text-left\">\r\n                  <div class=\"icon-wrapper rounded-circle\">\r\n                    <div class=\"icon-wrapper-bg opacity-10 bg-warning\"></div>\r\n                  </div>\r\n                  <div class=\"widget-chart-content\">\r\n                    <div class=\"widget-subheading\">Active cases</div>\r\n                    <div class=\"widget-numbers small-font\">{{globalConfirmedCases}}</div>\r\n                    <div class=\"widget-description opacity-8 text-focus\">\r\n                      <div class=\"d-inline text-danger pr-1\">\r\n                        <fa name=\"angle-down\"></fa>\r\n                        <span class=\"pl-1\">\r\n                          {{(globalConfirmedCases / globalPopulation) * 100 | number : '1.2-2'}}%\r\n                        </span>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"divider m-0 d-md-none d-sm-block\"></div>\r\n              </div>\r\n              <div class=\"col-sm-6 col-md-4 col-xl-4\">\r\n                <div class=\"card no-shadow rm-border bg-transparent widget-chart text-left\">\r\n                  <div class=\"icon-wrapper rounded-circle\">\r\n                    <div class=\"icon-wrapper-bg opacity-9 bg-success\"></div>\r\n                  </div>\r\n                  <div class=\"widget-chart-content\">\r\n                    <div class=\"widget-subheading\">Recovered cases</div>\r\n                    <div class=\"widget-numbers small-font\"><span>{{globalRecoveredCases}}</span></div>\r\n                    <div class=\"widget-description opacity-8 text-focus\">\r\n                      <span class=\"text-info pl-1\">\r\n                          <fa name=\"angle-down\"></fa>\r\n                          <span class=\"pl-1\">\r\n                            {{(globalRecoveredCases / globalConfirmedCases) * 100 | number : '1.2-2'}}%\r\n                          </span>\r\n                      </span>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"divider m-0 d-md-none d-sm-block\"></div>\r\n              </div>\r\n              <div class=\"col-sm-12 col-md-4 col-xl-4\">\r\n                <div class=\"card no-shadow rm-border bg-transparent widget-chart text-left\">\r\n                  <div class=\"icon-wrapper rounded-circle\">\r\n                    <div class=\"icon-wrapper-bg opacity-9 bg-danger\"></div>\r\n                  </div>\r\n                  <div class=\"widget-chart-content\">\r\n                    <div class=\"widget-subheading\">Fatal cases</div>\r\n                    <div class=\"widget-numbers small-font\"><span>{{globalDeathCases}}</span></div>\r\n                    <div class=\"widget-description text-focus\">\r\n                      <span class=\"text-warning pl-1\">\r\n                          <fa name=\"angle-up\"></fa>\r\n                          <span class=\"pl-1\">\r\n                            {{(globalDeathCases / globalConfirmedCases) * 100 | number : '1.2-2'}}%\r\n                          </span>\r\n                      </span>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n          </div>\r\n        </div>\r\n      </perfect-scrollbar>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -3685,6 +4110,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_redux_store__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_angular_redux_store__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_common_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../services/common.service */ "./src/app/services/common.service.ts");
+/* harmony import */ var _data_actual_confirmed_data_json__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../data/actual/confirmed-data.json */ "./src/data/actual/confirmed-data.json");
+var _data_actual_confirmed_data_json__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../../data/actual/confirmed-data.json */ "./src/data/actual/confirmed-data.json", 1);
+/* harmony import */ var _data_actual_deaths_data_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../data/actual/deaths-data.json */ "./src/data/actual/deaths-data.json");
+var _data_actual_deaths_data_json__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../../data/actual/deaths-data.json */ "./src/data/actual/deaths-data.json", 1);
+/* harmony import */ var _data_actual_recovery_data_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../data/actual/recovery-data.json */ "./src/data/actual/recovery-data.json");
+var _data_actual_recovery_data_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../../data/actual/recovery-data.json */ "./src/data/actual/recovery-data.json", 1);
+/* harmony import */ var _data_countries_dataset_json__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../data/countries-dataset.json */ "./src/data/countries-dataset.json");
+var _data_countries_dataset_json__WEBPACK_IMPORTED_MODULE_10___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../../data/countries-dataset.json */ "./src/data/countries-dataset.json", 1);
+
+
+
+
+
 
 
 
@@ -3692,9 +4131,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var SidebarComponent = /** @class */ (function () {
-    function SidebarComponent(globals, activatedRoute) {
+    function SidebarComponent(globals, activatedRoute, commonService) {
         this.globals = globals;
         this.activatedRoute = activatedRoute;
+        this.commonService = commonService;
         this.ASSETS_PATH = './assets';
         this.activeId = 'dashboardsMenu';
     }
@@ -3715,6 +4155,11 @@ var SidebarComponent = /** @class */ (function () {
             }
         });
         this.extraParameter = this.activatedRoute.snapshot.firstChild.data.extraParameter;
+        this.globalConfirmedCases = this.getGlobalConfirmedCases();
+        this.globalDeathCases = this.getGlobalDeathCases();
+        this.globalRecoveredCases = this.getGlobalRecoveredCases();
+        this.globalPopulation = _data_countries_dataset_json__WEBPACK_IMPORTED_MODULE_10__[0].population;
+        ;
     };
     SidebarComponent.prototype.onResize = function (event) {
         this.newInnerWidth = event.target.innerWidth;
@@ -3724,6 +4169,21 @@ var SidebarComponent = /** @class */ (function () {
         else {
             this.globals.toggleSidebar = false;
         }
+    };
+    // Global total confirmed cases
+    SidebarComponent.prototype.getGlobalConfirmedCases = function () {
+        var lastdayIndex = _data_actual_confirmed_data_json__WEBPACK_IMPORTED_MODULE_7__[0].data.length - 1;
+        return _data_actual_confirmed_data_json__WEBPACK_IMPORTED_MODULE_7__[0].data[lastdayIndex].count;
+    };
+    // Global total death cases
+    SidebarComponent.prototype.getGlobalDeathCases = function () {
+        var lastdayIndex = _data_actual_deaths_data_json__WEBPACK_IMPORTED_MODULE_8__[0].data.length - 1;
+        return _data_actual_deaths_data_json__WEBPACK_IMPORTED_MODULE_8__[0].data[lastdayIndex].count;
+    };
+    // Global total recovery cases
+    SidebarComponent.prototype.getGlobalRecoveredCases = function () {
+        var lastdayIndex = _data_actual_recovery_data_json__WEBPACK_IMPORTED_MODULE_9__[0].data.length - 1;
+        return _data_actual_recovery_data_json__WEBPACK_IMPORTED_MODULE_9__[0].data[lastdayIndex].count;
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_redux_store__WEBPACK_IMPORTED_MODULE_3__["select"])('config'),
@@ -3741,7 +4201,8 @@ var SidebarComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./sidebar.component.html */ "./src/app/Layout/Components/sidebar/sidebar.component.html"),
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_theme_options__WEBPACK_IMPORTED_MODULE_2__["ThemeOptions"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_5__["ActivatedRoute"]])
+            _angular_router__WEBPACK_IMPORTED_MODULE_5__["ActivatedRoute"],
+            _services_common_service__WEBPACK_IMPORTED_MODULE_6__["CommonService"]])
     ], SidebarComponent);
     return SidebarComponent;
 }());
@@ -4778,10 +5239,10 @@ module.exports = [{"other_detail":{"Country":"World","State":"","Lat":"","Long":
 
 /***/ }),
 
-/***/ "./src/data/actual/recovered-data.json":
-/*!*********************************************!*\
-  !*** ./src/data/actual/recovered-data.json ***!
-  \*********************************************/
+/***/ "./src/data/actual/recovery-data.json":
+/*!********************************************!*\
+  !*** ./src/data/actual/recovery-data.json ***!
+  \********************************************/
 /*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, default */
 /***/ (function(module) {
 
@@ -4817,15 +5278,15 @@ var map = {
 	],
 	"./italy/confirmed-data.json": [
 		"./src/data/predictions/italy/confirmed-data.json",
-		1
+		3
 	],
 	"./spain/confirmed-data.json": [
 		"./src/data/predictions/spain/confirmed-data.json",
-		2
+		5
 	],
 	"./usa/confirmed-data.json": [
 		"./src/data/predictions/usa/confirmed-data.json",
-		3
+		7
 	]
 };
 function webpackAsyncContext(req) {
@@ -4846,6 +5307,57 @@ webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
 webpackAsyncContext.id = "./src/data/predictions lazy recursive ^\\.\\/.*\\/confirmed\\-data\\.json$";
+module.exports = webpackAsyncContext;
+
+/***/ }),
+
+/***/ "./src/data/predictions lazy recursive ^\\.\\/.*\\/recovery\\-data\\.json$":
+/*!***********************************************************************************!*\
+  !*** ./src/data/predictions lazy ^\.\/.*\/recovery\-data\.json$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./global/recovery-data.json": [
+		"./src/data/predictions/global/recovery-data.json",
+		1
+	],
+	"./india/recovery-data.json": [
+		"./src/data/predictions/india/recovery-data.json",
+		2
+	],
+	"./italy/recovery-data.json": [
+		"./src/data/predictions/italy/recovery-data.json",
+		4
+	],
+	"./spain/recovery-data.json": [
+		"./src/data/predictions/spain/recovery-data.json",
+		6
+	],
+	"./usa/recovery-data.json": [
+		"./src/data/predictions/usa/recovery-data.json",
+		8
+	]
+};
+function webpackAsyncContext(req) {
+	var ids = map[req];
+	if(!ids) {
+		return Promise.resolve().then(function() {
+			var e = new Error("Cannot find module '" + req + "'");
+			e.code = 'MODULE_NOT_FOUND';
+			throw e;
+		});
+	}
+	return __webpack_require__.e(ids[1]).then(function() {
+		var id = ids[0];
+		return __webpack_require__.t(id, 3);
+	});
+}
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+webpackAsyncContext.id = "./src/data/predictions lazy recursive ^\\.\\/.*\\/recovery\\-data\\.json$";
 module.exports = webpackAsyncContext;
 
 /***/ }),
@@ -4922,7 +5434,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\ari_latest\poc\covid-19\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\ari_latest\dev\poc\covid-19\src\main.ts */"./src/main.ts");
 
 
 /***/ })
